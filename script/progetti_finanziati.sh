@@ -17,6 +17,7 @@ folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "${folder}"/../data/progetti_finanziati
 mkdir -p "${folder}"/../data/progetti_finanziati/raw
+mkdir -p "${folder}"/../data/progetti_finanziati/output
 mkdir -p "${folder}"/../data/progetti_finanziati/processing
 mkdir -p "${folder}"/../data/sample
 
@@ -42,9 +43,9 @@ do
     sleep 1
 done
 
-echo "Download completato. File salvati in data/progetti_finanziati/raw/"
+# unisci i progetti in un unico file
+jq -s 'add'  "${folder}"/../data/progetti_finanziati/processing/progetti_finanziati_*.json >"${folder}"/../data/progetti_finanziati/output/progetti_finanziati.json
 
-# Crea file di esempio con i primi 3 progetti con tutti i campi
-jq '.results[0:3]' "${folder}"/../data/progetti_finanziati/raw/progetti_finanziati_01.json > "${folder}"/../data/sample/progetti_finanziati_sample_raw.json
+# appiattisci il file
+flatterer --force "${folder}"/../data/progetti_finanziati/output/progetti_finanziati.json "${folder}"/../data/progetti_finanziati/output/flattened
 
-jq 'map(.metadata.participants |= (if type == "array" then map(fromjson)[0] else . end))' "${folder}"/../data/sample/progetti_finanziati_sample_raw.json > "${folder}"/../data/sample/progetti_finanziati_sample_clean.json
