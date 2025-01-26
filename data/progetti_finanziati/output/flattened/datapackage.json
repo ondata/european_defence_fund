@@ -1,0 +1,675 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "name": "main",
+      "flatterer_name": "main",
+      "title": "main",
+      "schema": {
+        "fields": [
+          {
+            "name": "_link",
+            "title": "_link",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "apiVersion",
+            "title": "apiVersion",
+            "type": "number",
+            "format": "number",
+            "count": 137
+          },
+          {
+            "name": "reference",
+            "title": "reference",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "url",
+            "title": "url",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "title",
+            "title": "title",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 137
+          },
+          {
+            "name": "contentType",
+            "title": "contentType",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "language",
+            "title": "language",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "databaseLabel",
+            "title": "databaseLabel",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "database",
+            "title": "database",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "summary",
+            "title": "summary",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "weight",
+            "title": "weight",
+            "type": "number",
+            "format": "number",
+            "count": 137
+          },
+          {
+            "name": "groupById",
+            "title": "groupById",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 137
+          },
+          {
+            "name": "content",
+            "title": "content",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "accessRestriction",
+            "title": "accessRestriction",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 137
+          },
+          {
+            "name": "pages",
+            "title": "pages",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 137
+          },
+          {
+            "name": "checksum",
+            "title": "checksum",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_publications",
+            "title": "metadata_publications",
+            "type": "array",
+            "format": "array",
+            "count": 137
+          },
+          {
+            "name": "metadata_typeOfAction",
+            "title": "metadata_typeOfAction",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_es_SortDate",
+            "title": "metadata_es_SortDate",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_endDate",
+            "title": "metadata_endDate",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_status",
+            "title": "metadata_status",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_projectObjective",
+            "title": "metadata_projectObjective",
+            "type": "string",
+            "format": "string",
+            "count": 136
+          },
+          {
+            "name": "metadata_language",
+            "title": "metadata_language",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_title",
+            "title": "metadata_title",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_esST_checksum",
+            "title": "metadata_esST_checksum",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_objective",
+            "title": "metadata_objective",
+            "type": "string",
+            "format": "string",
+            "count": 136
+          },
+          {
+            "name": "metadata_typeOfMGAs",
+            "title": "metadata_typeOfMGAs",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_esST_FileName",
+            "title": "metadata_esST_FileName",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_freeKeywords",
+            "title": "metadata_freeKeywords",
+            "type": "string",
+            "format": "string",
+            "count": 130
+          },
+          {
+            "name": "metadata_DATASOURCE",
+            "title": "metadata_DATASOURCE",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_REFERENCE",
+            "title": "metadata_REFERENCE",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_projectId",
+            "title": "metadata_projectId",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_topicAbbreviation",
+            "title": "metadata_topicAbbreviation",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_numberOfContributors",
+            "title": "metadata_numberOfContributors",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_publicationsAvailable",
+            "title": "metadata_publicationsAvailable",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_overallBudget",
+            "title": "metadata_overallBudget",
+            "type": "number",
+            "format": "number",
+            "count": 136
+          },
+          {
+            "name": "metadata_pics",
+            "title": "metadata_pics",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_startDate",
+            "title": "metadata_startDate",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_programId",
+            "title": "metadata_programId",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_typeOfActions",
+            "title": "metadata_typeOfActions",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_es_ContentType",
+            "title": "metadata_es_ContentType",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_programmePeriod",
+            "title": "metadata_programmePeriod",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_acronym",
+            "title": "metadata_acronym",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_programmes",
+            "title": "metadata_programmes",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_esDA_IngestDate",
+            "title": "metadata_esDA_IngestDate",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_legalEntityNames",
+            "title": "metadata_legalEntityNames",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_countries",
+            "title": "metadata_countries",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_euContributionRate",
+            "title": "metadata_euContributionRate",
+            "type": "number",
+            "format": "number",
+            "count": 58
+          },
+          {
+            "name": "metadata_url",
+            "title": "metadata_url",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_esST_URL",
+            "title": "metadata_esST_URL",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_euContributionAmount",
+            "title": "metadata_euContributionAmount",
+            "type": "number",
+            "format": "number",
+            "count": 136
+          },
+          {
+            "name": "metadata_ecSignatureDate",
+            "title": "metadata_ecSignatureDate",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_esDA_QueueDate",
+            "title": "metadata_esDA_QueueDate",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_programDescription",
+            "title": "metadata_programDescription",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_topicId",
+            "title": "metadata_topicId",
+            "type": "integer",
+            "format": "integer",
+            "count": 137
+          },
+          {
+            "name": "metadata_nutsCode",
+            "title": "metadata_nutsCode",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_fundedUnder",
+            "title": "metadata_fundedUnder",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_programAbbreviation",
+            "title": "metadata_programAbbreviation",
+            "type": "string",
+            "format": "string",
+            "count": 137
+          },
+          {
+            "name": "metadata_esDA_FirstIngestDate",
+            "title": "metadata_esDA_FirstIngestDate",
+            "type": "string",
+            "format": "string",
+            "count": 88
+          }
+        ],
+        "primaryKey": "_link"
+      },
+      "path": "csv/main.csv"
+    },
+    {
+      "profile": "tabular-data-resource",
+      "name": "metadata_participants",
+      "flatterer_name": "metadata_participants",
+      "title": "metadata_participants",
+      "schema": {
+        "fields": [
+          {
+            "name": "_link",
+            "title": "_link",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "_link_main",
+            "title": "_link_main",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "role",
+            "title": "role",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "pic",
+            "title": "pic",
+            "type": "number",
+            "format": "number",
+            "count": 1872
+          },
+          {
+            "name": "legalName",
+            "title": "legalName",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "sme",
+            "title": "sme",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "latitude",
+            "title": "latitude",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "longitude",
+            "title": "longitude",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "activityType",
+            "title": "activityType",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "eucontribution",
+            "title": "eucontribution",
+            "type": "number",
+            "format": "number",
+            "count": 1872
+          },
+          {
+            "name": "status",
+            "title": "status",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "order",
+            "title": "order",
+            "type": "number",
+            "format": "number",
+            "count": 1872
+          },
+          {
+            "name": "organizationType",
+            "title": "organizationType",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "type",
+            "title": "type",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "webLink",
+            "title": "webLink",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_id",
+            "title": "postalAddress_id",
+            "type": "number",
+            "format": "number",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_abbreviation",
+            "title": "postalAddress_abbreviation",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_classId",
+            "title": "postalAddress_classId",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_context",
+            "title": "postalAddress_context",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_description",
+            "title": "postalAddress_description",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_postalCode",
+            "title": "postalAddress_postalCode",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_street",
+            "title": "postalAddress_street",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_city",
+            "title": "postalAddress_city",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_id",
+            "title": "postalAddress_countryCode_id",
+            "type": "number",
+            "format": "number",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_abbreviation",
+            "title": "postalAddress_countryCode_abbreviation",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_classId",
+            "title": "postalAddress_countryCode_classId",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_context",
+            "title": "postalAddress_countryCode_context",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_description",
+            "title": "postalAddress_countryCode_description",
+            "type": "string",
+            "format": "string",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_postalCode",
+            "title": "postalAddress_countryCode_postalCode",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_street",
+            "title": "postalAddress_countryCode_street",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_city",
+            "title": "postalAddress_countryCode_city",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          },
+          {
+            "name": "postalAddress_countryCode_countryCode",
+            "title": "postalAddress_countryCode_countryCode",
+            "type": "boolean",
+            "format": "boolean",
+            "count": 1872
+          }
+        ],
+        "primaryKey": "_link",
+        "foreignKeys": [
+          {
+            "fields": "_link_main",
+            "reference": {
+              "resource": "main",
+              "fields": "_link"
+            }
+          }
+        ]
+      },
+      "path": "csv/metadata_participants.csv"
+    }
+  ]
+}
