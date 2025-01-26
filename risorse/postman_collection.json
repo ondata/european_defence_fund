@@ -1,0 +1,892 @@
+{
+	"info": {
+		"_postman_id": "d758dce9-0da9-49f9-b3c6-e88a8869f67c",
+		"name": "CS Public APIs",
+		"description": "This is a collection with the public CS (Corporate Search) APIs.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET  Refrence Data Code Description (FACET)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/search-api/prod/rest/search?apiKey=SEDIA&text=***",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Grants & Tenders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"type": "file",
+							"src": "/C:/Users/YadavPriti/Desktop/postman/CS-params-AllG&T.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/search-api/prod/rest/search?apiKey=SEDIA&text=***",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Only Tenders",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"type\":[\"0\"]}},{\"terms\":{\"status\":[\"31094501\",\"31094502\",\"31094503\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/search-api/prod/rest/search?apiKey=SEDIA&text=***",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Only Tenders - example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "query",
+									"value": "{\"bool\":{\"must\":[{\"terms\":{\"type\":[\"0\"]}},{\"terms\":{\"status\":[\"31094501\",\"31094502\",\"31094503\"]}}]}}",
+									"contentType": "application/json",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/search-api/prod/rest/search?apiKey=SEDIA&text=***",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"search-api",
+								"prod",
+								"rest",
+								"search"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "SEDIA"
+								},
+								{
+									"key": "text",
+									"value": "***"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 03 Feb 2022 17:55:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,zipkin-tracer-id-prefix"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, proxy-revalidate"
+						},
+						{
+							"key": "Server",
+							"value": "Europa"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"apiVersion\": null,\n    \"terms\": \"***\",\n    \"responseTime\": 31,\n    \"totalResults\": 6991,\n    \"pageNumber\": 1,\n    \"pageSize\": 10,\n    \"sort\": \"relevance\",\n    \"groupByField\": null,\n    \"queryLanguage\": {\n        \"language\": \"en\",\n        \"probability\": 0\n    },\n    \"spellingSuggestion\": null,\n    \"bestBets\": [],\n    \"results\": [\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9659en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9659\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"1\",\n            \"content\": \"Horizon Europe Project: Mental Health\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"OPEN\"\n                ],\n                \"updateDate\": [\n                    \"2022-02-16T11:00:00.000+0000\"\n                ],\n                \"sortStatus\": [\n                    \"1\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"This call for tender addresses a research proposal as regards the assessment of new medical developments for the early diagnosis as well as treatment of mental health conditions which could pose a safety risk for aviation and would consequently lead to pilot and air traffic controller (ATCO) unfitness or the limitation of their licence privileges for safety purposes.Currently, there are no specific, validated mental health assessment methods for aviation use, incorporating the specific operational needs, to address the issues identified. Research is needed to further detail the specific needs, and to develop and validate assessment methods or to assess the applicability of existing methods for use in the aviation environment.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Horizon Europe Project: Mental Health\"\n                ],\n                \"cftId\": [\n                    \"9659\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"EASA.2021.HVP.27\"\n                ],\n                \"additionalCpvs\": [\n                    \"[]\"\n                ],\n                \"identifier\": [\n                    \"628256a9-2b4d-4665-b559-f33e383b5589\"\n                ],\n                \"caName\": [\n                    \"EASA\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2022-02-15T11:00:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:16:21.253+0000\"\n                ],\n                \"closingDate\": [\n                    \"2022-02-15T11:00:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9659\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:05.280+0000\"\n                ],\n                \"mainCpv\": [\n                    \"73000000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"73000000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-11-24T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094502\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"DEA23\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"6008en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=6008\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"1\",\n            \"content\": \"Security Services for the Delegation of the European Union to Tajikistan\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"NEGOTIATED_COMPETITIVE\"\n                ],\n                \"sortStatus\": [\n                    \"1\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"twoStageDeadlineDate\": [\n                    \"2021-12-08T23:59:59Z\"\n                ],\n                \"description\": [\n                    \"The contractor shall provide the human and material resources necessary to ensure the security of persons and assets under the contracting authority's responsibility. The main services to be provided may include, among others, the provision of security guards, 'active' GPS tracking systems, alarm systems and CCTV systems.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Security Services for the Delegation of the European Union to Tajikistan\"\n                ],\n                \"cftId\": [\n                    \"6008\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"EEAS/DELTJKD/2020/CPN/0013\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"79710000\\\"}]\"\n                ],\n                \"identifier\": [\n                    \"f7d74481-5565-4c2f-b03b-216dd110ddc2\"\n                ],\n                \"caName\": [\n                    \"EEAS\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-12-08T23:59:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:16:37.125+0000\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=6008\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:10.017+0000\"\n                ],\n                \"mainCpv\": [\n                    \"79710000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"79710000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-11-10T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094502\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"TJ\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9626en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9626\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"2\",\n            \"content\": \"Managed Network Services for EU Agencies in the Paris and Frankfurt Regions\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"PRIOR_INFORMATION_NOTICE\"\n                ],\n                \"sortStatus\": [\n                    \"2\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"The contracting authority would like to sign a framework contract for managed network services covering:— LAN as a service (LaaS),— WiFi as a service (WaaS),— remote access as a service,— VPN as a service,— internet access,— Cloud connectivity services,— Cloud Access Security Brokerage (CASB),— hosting,— ad-hoc services.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Managed Network Services for EU Agencies in the Paris and Frankfurt Regions\"\n                ],\n                \"cftId\": [\n                    \"9626\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"EBA/2021/30/IT/SER/OP\"\n                ],\n                \"additionalCpvs\": [\n                    \"[]\"\n                ],\n                \"identifier\": [\n                    \"c2bc6f7a-b1d7-4cdd-affd-cea6c318c50c\"\n                ],\n                \"caName\": [\n                    \"EBA\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2022-11-05T23:59:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:16:36.550+0000\"\n                ],\n                \"closingDate\": [\n                    \"2022-11-05T23:59:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9626\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:09.408+0000\"\n                ],\n                \"mainCpv\": [\n                    \"72700000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"72700000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-11-12T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094501\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"DE712\",\n                    \"FR105\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9538en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9538\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"2\",\n            \"content\": \"Multiple Framework Agreement for technical consultancy services relating to architecture and engineering at the Joint Research Centre, Ispra site\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"PRIOR_INFORMATION_NOTICE\"\n                ],\n                \"sortStatus\": [\n                    \"2\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"Provision of technical consultancy, design and direction of works services relating to architecture, civil engineering, urban planning, environment and plant engineering, as part of the activities undertaken by the Joint Research Centre at the Ispra site (VA). The purpose of the activities is to provide advice to the site management for infrastructures operation, design, supervision of works, tests, assessments, verifications and safety coordination on construction sites and/or renovation and maintenance of site buildings, plants and infrastructures.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Multiple Framework Agreement for technical consultancy services relating to architecture and engineering at the Joint Research Centre, Ispra site\"\n                ],\n                \"cftId\": [\n                    \"9538\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"JRC/IPR/2021/OP/2774-PIN\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"71000000\\\"}]\"\n                ],\n                \"identifier\": [\n                    \"43bec710-3326-4bbd-803f-0d8916603fa8\"\n                ],\n                \"caName\": [\n                    \"JRCIPR\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2022-10-22T23:59:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:10.985+0000\"\n                ],\n                \"closingDate\": [\n                    \"2022-10-22T23:59:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9538\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:14.715+0000\"\n                ],\n                \"mainCpv\": [\n                    \"71000000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"71000000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-29T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094501\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"ITC41\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9632en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9632\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"3\",\n            \"content\": \"Countering the negative effects of misinformation during global crises through targeted behavioural interventions: a behavioural experiment.\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"EX_ANTE_PUBLICITY\"\n                ],\n                \"sortStatus\": [\n                    \"3\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"<b><i>Please note that this is not a call for tenders but a publication announcing the Contracting authority’s <a href=\\\"https://ec.europa.eu/docsroom/documents/40287\\\" target=\\\"_blank\\\">intention to publish a future negotiated low or middle valueprocedure.  </a> </i></b><br></br>The purpose of this tender procedure is the implementation of an experimental survey by the JRC aimed at testing behavioural interventions to reduce the negative effects of misinformation. In particular, the contractor will support the European Commission by providing translation services of and participants to an online experimental survey. The experimental survey will focus on the effectiveness of tailored behavioural interventions in reducing the negative effects of misinformation. For example, to investigate if debunking messages tailored towards specific characteristics of target groups are more effective than generic alternatives.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Countering the negative effects of misinformation during global crises through targeted behavioural interventions: a behavioural experiment.\"\n                ],\n                \"cftId\": [\n                    \"9632\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"JRC/2021/LVP/2959-ExA\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"73300000\\\"}]\"\n                ],\n                \"identifier\": [\n                    \"20d2d152-2371-4695-bb42-aa4d548f1fb6\"\n                ],\n                \"caName\": [\n                    \"JRCBRU\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-11-12T23:59:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:13.703+0000\"\n                ],\n                \"closingDate\": [\n                    \"2021-11-12T23:59:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9632\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:15.672+0000\"\n                ],\n                \"mainCpv\": [\n                    \"73300000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"73300000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-29T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094503\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"00\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9573en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9573\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"3\",\n            \"content\": \"Update of the information technology tool for advanced analysis and visualisation of the main strengths and specific niches for six economies of the Western Balkans\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"EX_ANTE_PUBLICITY\"\n                ],\n                \"sortStatus\": [\n                    \"3\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"<b><i>Please note that this is not a call for tenders but a publication announcing the Contracting authority’s <a href=\\\"https://ec.europa.eu/docsroom/documents/40287\\\" target=\\\"_blank\\\">intention to publish a future negotiated low or middle valueprocedure.  </a> </i></b><br></br> The objective of this contract is to update the IT tool delivered to the European Commission (EC) within the Science and technology panorama of the Western Balkans, which aims at collecting, analysing and presenting data on patents, scientific publications and R&D&I projects. To achieve that, the relevant data needs to be analysed in such a way to allow for an assessment of specific strengths, weaknesses and emerging STI topics for the Western Balkans as a region and each of the 6 economies that constitute it in terms of technological and scientific fields and topics, as well as for matching the emerging fields and topics with the economic domains identified in the report “Science and technology panorama of the Western Balkans” (please see Annex 1). Based on such update, interactive and static visualisations of the results should be given in such a way that they are possible to be embedded on the S3 Platform webpage. The IT tool update should also include internal and international collaboration patterns within scientific and technological topics and fields, including co-patenting, co-publishing and common R&D&I projects. The methodology developed has to be consistent with the Smart Specialisation guidance from the European Commission.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Update of the information technology tool for advanced analysis and visualisation of the main strengths and specific niches for six economies of the Western Balkans\"\n                ],\n                \"cftId\": [\n                    \"9573\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"JRC/SVQ/2021/LVP/2858-ExA\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"48000000\\\"}]\"\n                ],\n                \"identifier\": [\n                    \"ef1d8b81-59fd-4116-a8ac-0503f311ebe7\"\n                ],\n                \"caName\": [\n                    \"JRCSVQ\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-11-22T23:59:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:16.883+0000\"\n                ],\n                \"closingDate\": [\n                    \"2021-11-22T23:59:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9573\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:16.941+0000\"\n                ],\n                \"mainCpv\": [\n                    \"48000000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"48000000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-27T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094503\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"ES618\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9362en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9362\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"3\",\n            \"content\": \"Multiple Framework Contract for Studies in the Field of European Union Budget Policy\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"OPEN\"\n                ],\n                \"updateDate\": [\n                    \"2021-11-23T14:00:00.000+0000\"\n                ],\n                \"sortStatus\": [\n                    \"3\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"The purpose of this call for tenders is to enable the CoR departments to have at their disposal a framework contract for the provision of scientific, legal, documentary and editorial assistance services for CoR bodies, members, rapporteurs and departments. This request for services entrusted to external experts is one of the measures taken to provide members with better services in order to strengthen and enhance the CoR' consultative work within the framework of the legislative process.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Multiple Framework Contract for Studies in the Field of European Union Budget Policy\"\n                ],\n                \"cftId\": [\n                    \"9362\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"CDR/2021/C1/1/COTER /BUDG\"\n                ],\n                \"additionalCpvs\": [\n                    \"[]\"\n                ],\n                \"identifier\": [\n                    \"3a3b3e5b-8099-467c-90fe-60b963584b70\"\n                ],\n                \"caName\": [\n                    \"COR\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-11-22T17:00:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:17.928+0000\"\n                ],\n                \"closingDate\": [\n                    \"2021-11-22T17:00:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9362\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:17.410+0000\"\n                ],\n                \"mainCpv\": [\n                    \"73210000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"73210000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-26T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094503\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"BE100\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9605en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9605\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"3\",\n            \"content\": \"Framework contract for provision of maintenance services for gas detection and safety systems in scientific laboratories of the JRC Petten.\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"EX_ANTE_PUBLICITY\"\n                ],\n                \"sortStatus\": [\n                    \"3\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"description\": [\n                    \"<b><i>Please note that this is not a call for tenders but a publication announcing the Contracting authority’s <a href=\\\"https://ec.europa.eu/docsroom/documents/40287\\\" target=\\\"_blank\\\">intention to publish a future negotiated low or middle valueprocedure.  </a> </i></b><br></br>The purpose of this call for tenders is the conclusion of a framework contract for the provision of maintenance and calibration services of the existing (Buveco) gas detection safety systems in use in the JRC scientific laboratories located in Petten, the Netherlands for the equipment installed in several laboratories.\\nThe JRC has established laboratories for fuel cells, electrolyser testing located at the Petten campus  in the FCTEST lab, for hydrogen testing in Gastef lab and for material testing of candidate materials for generation 4 nuclear power plants in AMALIA lab.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Framework contract for provision of maintenance services for gas detection and safety systems in scientific laboratories of the JRC Petten.\"\n                ],\n                \"cftId\": [\n                    \"9605\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"JRC/PTT/2021/MVP/2926-ExA\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"50000000\\\"}]\"\n                ],\n                \"identifier\": [\n                    \"caa1d7ac-4225-4301-a82b-bf92b0a6967f\"\n                ],\n                \"caName\": [\n                    \"JRCPTT\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-11-14T23:59:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:17.230+0000\"\n                ],\n                \"closingDate\": [\n                    \"2021-11-14T23:59:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9605\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:17.105+0000\"\n                ],\n                \"mainCpv\": [\n                    \"50000000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"50000000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-27T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094503\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"NL328\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"9452en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9452\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"3\",\n            \"content\": \"Procurement of Ten (10) Velodyne Ultrapuck Laser Scanners\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"OPEN\"\n                ],\n                \"updateDate\": [\n                    \"2021-11-25T10:00:00.000+0000\"\n                ],\n                \"sortStatus\": [\n                    \"3\"\n                ],\n                \"contractType\": [\n                    \"31095499\"\n                ],\n                \"description\": [\n                    \"Ten Velodyne Ultrapuck 3D laser scanners for the development of a safeguards monitoring system in nuclear facilities.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Procurement of Ten (10) Velodyne Ultrapuck Laser Scanners\"\n                ],\n                \"cftId\": [\n                    \"9452\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"JRC/IPR/2021/OP/2611\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"35125100\\\"}]\"\n                ],\n                \"identifier\": [\n                    \"a592f491-ea62-4a08-83f9-ccaad75eeba4\"\n                ],\n                \"caName\": [\n                    \"JRCIPR\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-11-24T16:00:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:21.850+0000\"\n                ],\n                \"closingDate\": [\n                    \"2021-11-24T16:00:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=9452\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:18.820+0000\"\n                ],\n                \"mainCpv\": [\n                    \"35125100\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"35125100\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-25T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094503\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"ITC41\"\n                ]\n            },\n            \"children\": []\n        },\n        {\n            \"apiVersion\": \"2.83\",\n            \"reference\": \"8658en\",\n            \"url\": \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=8658\",\n            \"title\": null,\n            \"contentType\": \"text/plain\",\n            \"language\": \"en\",\n            \"databaseLabel\": \"SEDIA\",\n            \"database\": \"SEDIA\",\n            \"summary\": null,\n            \"weight\": 2,\n            \"groupById\": \"1\",\n            \"content\": \"Technical Assistance and Supervision for Suluova Wastewater and Stormwater Project\",\n            \"accessRestriction\": false,\n            \"pages\": null,\n            \"metadata\": {\n                \"procedureType\": [\n                    \"RESTRICTED_PROCEDURE\"\n                ],\n                \"sortStatus\": [\n                    \"1\"\n                ],\n                \"contractType\": [\n                    \"31095498\"\n                ],\n                \"twoStageDeadlineDate\": [\n                    \"2021-11-26T14:30:59Z\"\n                ],\n                \"description\": [\n                    \"The contract will include Technical Assistance and Supervision for Suluova Wastewater and Stormwater Project. The contractor will be responsible for administrative, technical and financial capacity building for the Water Utility Department of Suluova Municipality, modernization of the WUD and, contract management and construction supervision for the implementation of works contracts including wastewater treatment plant and stormwater networks.\"\n                ],\n                \"type\": [\n                    \"0\"\n                ],\n                \"title\": [\n                    \"Technical Assistance and Supervision for Suluova Wastewater and Stormwater Project\"\n                ],\n                \"cftId\": [\n                    \"8658\"\n                ],\n                \"esST_FileName\": [\n                    \"file.txt\"\n                ],\n                \"callIdentifier\": [\n                    \"NEAR/ANK/2021/EA-RP/0105\"\n                ],\n                \"additionalCpvs\": [\n                    \"[{\\\"mainCode\\\":\\\"71520000\\\"}]\"\n                ],\n                \"frameworkProgramme\": [\n                    \"111111\"\n                ],\n                \"identifier\": [\n                    \"bf1721c1-0b75-4ecf-af69-462978c3bf22\"\n                ],\n                \"caName\": [\n                    \"DGNEAR\"\n                ],\n                \"es_ContentType\": [\n                    \"text/plain\"\n                ],\n                \"geographicalZones\": [\n                    \"31085511\",\n                    \"20001026\"\n                ],\n                \"programmePeriod\": [\n                    \"2014 - 2020\",\n                    \"2021 - 2027\"\n                ],\n                \"deadlineDate\": [\n                    \"2021-11-26T14:30:59.000+0000\"\n                ],\n                \"esDA_IngestDate\": [\n                    \"2021-11-25T17:17:22.630+0000\"\n                ],\n                \"closingDate\": [\n                    \"2022-04-05T16:00:59Z\"\n                ],\n                \"esST_URL\": [\n                    \"https://etendering.ted.europa.eu/cft/cft-display.html?cftId=8658\"\n                ],\n                \"esDA_QueueDate\": [\n                    \"2021-11-25T17:16:19.256+0000\"\n                ],\n                \"programmeDivisionProspect\": [\n                    \"42921266\"\n                ],\n                \"geographicalZone\": [\n                    \"20001026\"\n                ],\n                \"mainCpv\": [\n                    \"71520000\"\n                ],\n                \"mainCpvCode\": [\n                    \"{\\\"mainCode\\\":\\\"71520000\\\"}\"\n                ],\n                \"esIN_lots\": [\n                    \"[{\\\"number\\\":\\\"1\\\",\\\"description\\\":\\\"\\\"}]\"\n                ],\n                \"startDate\": [\n                    \"2021-10-22T00:00:00.000+0000\"\n                ],\n                \"status\": [\n                    \"31094502\"\n                ],\n                \"placesOfDeliveryOrPerformance\": [\n                    \"TR\"\n                ]\n            },\n            \"children\": []\n        }\n    ],\n    \"warnings\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Only Open Tenders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"type\":[\"0\"]}},{\"terms\":{\"status\":[\"31094501\",\"31094502\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filteredFundingAndTenders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"type\":[\"1\",\"2\",\"8\"]}},{\"terms\":{\"status\":[\"31094501\",\"31094502\",\"31094503\"]}},{\"term\":{\"programmePeriod\":\"2021 - 2027\"}},{\"terms\":{\"frameworkProgramme\":[\"43108390\"]}},{\"terms\":{\"programmeDivision\":[\"43108394\",\"43108406\",\"43108473\",\"43108514\"]}},{\"terms\":{\"crossCuttingPriorities\":[\"PART-COPROGR\"]}},{\"terms\":{\"destination\":[\"43650651\"]}},{\"term\":{\"callIdentifier\":\"HORIZON-INFRA-2021-EOSC-01\"}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "sort",
+							"value": "{\"field\":\"title\",\"order\":\"DESC\"}",
+							"contentType": "application/json",
+							"description": " ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTopicDetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_PERSON&text=%22HORIZON-CL3-2022-BM-01-01%22",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_PERSON"
+						},
+						{
+							"key": "text",
+							"value": "%22HORIZON-CL3-2022-BM-01-01%22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFundingUpdates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"type\":[\"6\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFaqs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"type": "file",
+							"src": "/C:/Users/YadavPriti/Desktop/postman/getAllFaqsQuery.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_FAQ&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_FAQ"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get2021-2027ProgPeriodFaqs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"type\":[\"0\",\"1\"]}},{\"term\":{\"period\":\"2021 - 2027\"}},{\"terms\":{\"status\":[\"0\",\"1\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_FAQ&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_FAQ"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOnlyGrantFaqsForHorizon2020FP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"type": "file",
+							"src": "/C:/Users/YadavPriti/Desktop/postman/getOnlyGrantaqsForHorizon2020FPQuerys.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_FAQ&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_FAQ"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFaqDetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"type": "file",
+							"src": "/C:/Users/YadavPriti/Desktop/postman/getFaqDetailsQuerys.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_FAQ&text=***",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_FAQ"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPublishedPartenerSearchesForTopic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"topics\":[\"HORIZON-CL4-2022-RESILIENCE-01-08\"]}},{\"terms\":{\"type\":[\"ORGANISATION\",\"PERSON\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_PERSON&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_PERSON"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPublished-PERSON-PartenerSearches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"hasPartnerSearch\":[true]}},{\"terms\":{\"type\":[null,\"PERSON\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_PERSON&text=***&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_PERSON"
+						},
+						{
+							"key": "text",
+							"value": "***"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecific-PERSON-PartenerSearches",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "query",
+							"value": "{\"bool\":{\"must\":[{\"terms\":{\"hasPartnerSearch\":[true]}},{\"terms\":{\"type\":[null,\"PERSON\"]}}]}}",
+							"contentType": "application/json",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_PERSON&text=Lara&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_PERSON"
+						},
+						{
+							"key": "text",
+							"value": "Lara"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get- Organisation Documnent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/document/999991722?apiKey=SEDIA_PERSON",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"document",
+						"999991722"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_PERSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Organisation Document",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA_PERSON&text=939994991&pageSize=50&pageNumber=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"tech",
+						"ec",
+						"europa",
+						"eu"
+					],
+					"path": [
+						"search-api",
+						"prod",
+						"rest",
+						"search"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "SEDIA_PERSON"
+						},
+						{
+							"key": "text",
+							"value": "939994991"
+						},
+						{
+							"key": "pageSize",
+							"value": "50"
+						},
+						{
+							"key": "pageNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://api.tech.ec.europa.eu",
+			"type": "string"
+		}
+	]
+}
