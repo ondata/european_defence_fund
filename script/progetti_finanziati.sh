@@ -5,6 +5,14 @@ set -e
 set -u
 set -o pipefail
 
+# Verifica che i programmi necessari siano installati
+for program in curl jq; do
+    if ! command -v "$program" >/dev/null 2>&1; then
+        echo "Errore: $program non è installato"
+        exit 1
+    fi
+done
+
 folder="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "$folder"/../data/progetti_finanziati
