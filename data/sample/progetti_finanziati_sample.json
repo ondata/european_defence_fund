@@ -1,0 +1,2813 @@
+[
+  {
+    "apiVersion": "2.129",
+    "reference": "44181033101103010",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101103010/EDF",
+    "title": null,
+    "contentType": "text/plain",
+    "language": "en",
+    "databaseLabel": "SEDIA_NONH2020_PROD",
+    "database": "SEDIA_NONH2020_PROD",
+    "summary": "real-time Monitoring and Sampling of CB menaces for improved dynamic mapping of threats, vulnerabilities and response capacities",
+    "weight": 0.0,
+    "groupById": null,
+    "content": "real-time Monitoring and Sampling of CB menaces for improved dynamic mapping of threats, vulnerabilities and response capacities",
+    "accessRestriction": false,
+    "pages": null,
+    "checksum": "E4BBCF86536F30C6EE60846ADCD406C4A7E74422258C1FFAC547CE998FBA542E",
+    "metadata": {
+      "subTypeOfAction": [],
+      "typeOfAction": [
+        "EDF Research Actions"
+      ],
+      "es_SortDate": [
+        "2024-12-26T18:00:16.985+0100"
+      ],
+      "endDate": [
+        "2025-12-31T00:00:00.000+0100"
+      ],
+      "projectWebsite": [],
+      "projectObjective": [
+        "MoSaiC is a research project focused on real-time monitoring of CBRN events paired with innovative sampling capabilities, to enhance dynamic mapping of threats, vulnerabilities and response capacities, inter alia addressing CBRN forensics priorities. The initiative will provide additional features to existing CBRN DIM platforms by working on the integration of a set of sensing capabilities which include:\n• Research on innovative and low-cost CB monitoring technologies installed on UAV and UGV systems (building inter alia on the H2020 projects ROCSAFE and 5G!Drones, and focusing on miniaturization of previously deployed technological solutions);\n• Research on innovative sampling technologies based primarily on the concept of “smart swabs”, enabling fast and non-destructive in situ analysis of a sample that can later be analyzed a second time in the lab by standard forensic;\n• Nearly real-time 3D mapping and processing of areas affected by CBRN contamination (indoor and outdoor), with a high-degree of autonomy.\n• Real-time visualization for Incident Commanders, including flowing of data from 3D mapping and CB monitoring sensors.\n• Real-time communication between C2 systems and drones, robots and sensors for CB monitoring and sampling missions.\nThe project is formally supported by five EU Member States MoDs (Italy, Austria, Denmark, the Netherlands and Estonia) thanks to the cooperation of their industrial players as well as public/private academic and research institutions. Over its thirty-six months of implementation, MoSaiC will provide tangible research outcomes with the complete design of an integrated, disruptive CBRN DIM technology able to provide real-time monitoring of CB threats, enhanced real-time C2 solutions for EU military forces. It will set a cornerstone for an improved industrial sovereignty of the EU in CBRN DIM applications."
+      ],
+      "language": [
+        "en"
+      ],
+      "title": [
+        "real-time Monitoring and Sampling of CB menaces for improved dynamic mapping of threats, vulnerabilities and response capacities"
+      ],
+      "esST_checksum": [
+        "E4BBCF86536F30C6EE60846ADCD406C4A7E74422258C1FFAC547CE998FBA542E"
+      ],
+      "objective": [
+        "MoSaiC is a research project focused on real-time monitoring of CBRN events paired with innovative sampling capabilities, to enhance dynamic mapping of threats, vulnerabilities and response capacities, inter alia addressing CBRN forensics priorities. The initiative will provide additional features to existing CBRN DIM platforms by working on the integration of a set of sensing capabilities which include:\n• Research on innovative and low-cost CB monitoring technologies installed on UAV and UGV systems (building inter alia on the H2020 projects ROCSAFE and 5G!Drones, and focusing on miniaturization of previously deployed technological solutions);\n• Research on innovative sampling technologies based primarily on the concept of “smart swabs”, enabling fast and non-destructive in situ analysis of a sample that can later be analyzed a second time in the lab by standard forensic;\n• Nearly real-time 3D mapping and processing of areas affected by CBRN contamination (indoor and outdoor), with a high-degree of autonomy.\n• Real-time visualization for Incident Commanders, including flowing of data from 3D mapping and CB monitoring sensors.\n• Real-time communication between C2 systems and drones, robots and sensors for CB monitoring and sampling missions.\nThe project is formally supported by five EU Member States MoDs (Italy, Austria, Denmark, the Netherlands and Estonia) thanks to the cooperation of their industrial players as well as public/private academic and research institutions. Over its thirty-six months of implementation, MoSaiC will provide tangible research outcomes with the complete design of an integrated, disruptive CBRN DIM technology able to provide real-time monitoring of CB threats, enhanced real-time C2 solutions for EU military forces. It will set a cornerstone for an improved industrial sovereignty of the EU in CBRN DIM applications."
+      ],
+      "typeOfMGAs": [
+        "44175699"
+      ],
+      "esST_FileName": [
+        "file.txt"
+      ],
+      "freeKeywords": [
+        "CBRN monitoring",
+        "DIM",
+        "VR",
+        "3D mapping",
+        "interoperability",
+        "civil-military cooperation",
+        "defence",
+        "first responders",
+        " Critical Infrastructure",
+        "drones",
+        "smart swab",
+        "situational awareness"
+      ],
+      "DATASOURCE": [
+        "SEDIA_NONH2020_PROD"
+      ],
+      "REFERENCE": [
+        "44181033101103010"
+      ],
+      "subProgramme": [],
+      "topicAbbreviation": [
+        "EDF-2021-MCBRN-R-CBRNDIM-2"
+      ],
+      "numberOfContributors": [
+        "8"
+      ],
+      "publicationsAvailable": [
+        "0"
+      ],
+      "overallBudget": [
+        "4401671.9"
+      ],
+      "pics": [
+        "907143904",
+        "999584128",
+        "999556289",
+        "999988521",
+        "907711936",
+        "991972053",
+        "951947040",
+        "999979500"
+      ],
+      "topicDescription": [],
+      "participants": [
+        {
+          "role": "coordinator",
+          "pic": 907143904,
+          "legalName": "FONDAZIONE SAFE",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "48121",
+            "street": "VIA MAGGIORE 73",
+            "city": "Ravenna",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "44.420655",
+          "longitude": "12.1920634",
+          "activityType": "Other",
+          "eucontribution": "632500",
+          "status": "Active",
+          "order": 1,
+          "organizationType": null,
+          "type": "OTH",
+          "webLink": "www.safe-europe.eu",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999584128,
+          "legalName": "AIT AUSTRIAN INSTITUTE OF TECHNOLOGY GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "1210",
+            "street": "GIEFINGGASSE 4",
+            "city": "Wien",
+            "countryCode": {
+              "id": 20000832,
+              "abbreviation": "AT",
+              "classId": null,
+              "context": null,
+              "description": "Austria",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.269137",
+          "longitude": "16.4266762",
+          "activityType": "Research organisation",
+          "eucontribution": "855250",
+          "status": "Active",
+          "order": 2,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "http://www.ait.ac.at/",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999556289,
+          "legalName": "BRUHN NEWTECH AS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "1050",
+            "street": "KONGENS NYTORV 17 3",
+            "city": "KOBENHAVN K",
+            "countryCode": {
+              "id": 20000875,
+              "abbreviation": "DK",
+              "classId": null,
+              "context": null,
+              "description": "Denmark",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "55.6800202",
+          "longitude": "12.5851952",
+          "activityType": "Other",
+          "eucontribution": "438750",
+          "status": "Active",
+          "order": 3,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 999988521,
+          "legalName": "AGENZIA NAZIONALE PER LE NUOVE TECNOLOGIE, L'ENERGIA E LO SVILUPPO ECONOMICO SOSTENIBILE",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00196",
+            "street": "LUNGOTEVERE GRANDE AMMIRAGLIO THAON DI REVEL 76",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9313877",
+          "longitude": "12.4627135",
+          "activityType": "Research organisation",
+          "eucontribution": "467500",
+          "status": "Active",
+          "order": 4,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "http://www.enea.it",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 907711936,
+          "legalName": "CAFA TECH OU",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "10612",
+            "street": "MADARA 29/1",
+            "city": "Tallinn",
+            "countryCode": {
+              "id": 20000880,
+              "abbreviation": "EE",
+              "classId": null,
+              "context": null,
+              "description": "Estonia",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "59.4372155",
+          "longitude": "24.7453688",
+          "activityType": "Other",
+          "eucontribution": "980625",
+          "status": "Active",
+          "order": 5,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "https://cafatech.com",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 991972053,
+          "legalName": "CONSORZIO CREO-CENTRO RICERCHE ELETTRO OTTICHE",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "67100",
+            "street": "SS 17 LOCALITA BOSCHETTO",
+            "city": "L'Aquila",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "42.3958927",
+          "longitude": "13.4357622",
+          "activityType": "Research organisation",
+          "eucontribution": "455750",
+          "status": "Active",
+          "order": 6,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.consorziocreo.it",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 951947040,
+          "legalName": "RE-LION GROUP B.V.",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "7524 PK",
+            "street": "Vliegveldstraat 100, B517",
+            "city": "Enschede",
+            "countryCode": {
+              "id": 20000973,
+              "abbreviation": "NL",
+              "classId": null,
+              "context": null,
+              "description": "Netherlands",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "52.2556952",
+          "longitude": "6.8515377",
+          "activityType": "Other",
+          "eucontribution": "498734.4",
+          "status": "Active",
+          "order": 7,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "re-lion.com",
+          "sme": true
+        },
+        {
+          "role": "thirdParty",
+          "pic": 999979500,
+          "legalName": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00185",
+            "street": "PIAZZALE ALDO MORO 7",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9009424",
+          "longitude": "12.5122989",
+          "activityType": "Research organisation",
+          "eucontribution": "72562.5",
+          "status": "Active",
+          "order": 6,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.cnr.it",
+          "sme": false
+        }
+      ],
+      "typeOfActions": [
+        "44173368"
+      ],
+      "es_ContentType": [
+        "text/plain"
+      ],
+      "programmePeriod": [
+        "2021 - 2027"
+      ],
+      "acronym": [
+        "MoSaiC"
+      ],
+      "programmes": [
+        "European Defence Fund (EDF)"
+      ],
+      "esDA_IngestDate": [
+        "2024-12-26T18:00:17.046+0100"
+      ],
+      "legalEntityNames": [
+        "FONDAZIONE SAFE",
+        "AIT AUSTRIAN INSTITUTE OF TECHNOLOGY GMBH",
+        "BRUHN NEWTECH AS",
+        "AGENZIA NAZIONALE PER LE NUOVE TECNOLOGIE, L'ENERGIA E LO SVILUPPO ECONOMICO SOSTENIBILE",
+        "CAFA TECH OU",
+        "CONSORZIO CREO-CENTRO RICERCHE ELETTRO OTTICHE",
+        "RE-LION GROUP B.V.",
+        "CONSIGLIO NAZIONALE DELLE RICERCHE"
+      ],
+      "countries": [
+        "20000922",
+        "20000832",
+        "20000875",
+        "20000922",
+        "20000880",
+        "20000922",
+        "20000973",
+        "20000922"
+      ],
+      "euContributionRate": [
+        "100"
+      ],
+      "url": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101103010/EDF"
+      ],
+      "esST_URL": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101103010/EDF"
+      ],
+      "euContributionAmount": [
+        "4401671.9"
+      ],
+      "ecSignatureDate": [
+        "2022-12-12T00:00:00.000+0100"
+      ],
+      "esDA_QueueDate": [
+        "2024-12-26T18:00:17.031+0100"
+      ],
+      "programDescription": [
+        "European Defence Fund (EDF)"
+      ],
+      "topicId": [
+        "45297708"
+      ],
+      "nutsCode": [
+        "ITH5",
+        "AT13",
+        "DK01",
+        "ITI4",
+        "EE00",
+        "ITF1",
+        "NL21",
+        "ITI4"
+      ],
+      "fundedUnder": [
+        "European Defence Fund (EDF)"
+      ],
+      "programAbbreviation": [
+        "EDF"
+      ],
+      "projectId": [
+        "101103010"
+      ],
+      "programId": [
+        "44181033"
+      ],
+      "startDate": [
+        "2023-01-01T00:00:00.000+0100"
+      ],
+      "summaries": [],
+      "status": [
+        "Ongoing"
+      ],
+      "publications": [
+        "[]"
+      ]
+    },
+    "enrichedMetadata": {},
+    "children": [],
+    "highlightedFragments": []
+  },
+  {
+    "apiVersion": "2.129",
+    "reference": "44181033101121453",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101121453/EDF",
+    "title": null,
+    "contentType": "text/plain",
+    "language": "en",
+    "databaseLabel": "SEDIA_NONH2020_PROD",
+    "database": "SEDIA_NONH2020_PROD",
+    "summary": "multinatiOnal Development INitiative for a Space-based missilE earlY-warning architecture II",
+    "weight": 0.0,
+    "groupById": null,
+    "content": "multinatiOnal Development INitiative for a Space-based missilE earlY-warning architecture II",
+    "accessRestriction": false,
+    "pages": null,
+    "checksum": "63E27208A4862E08D9939D569B79D3D0F8841E6BD36645097F3C35501E46A987",
+    "metadata": {
+      "es_SortDate": [
+        "2024-12-27T01:54:49.739+0100"
+      ],
+      "endDate": [
+        "2027-09-03T01:00:00.000+0200"
+      ],
+      "projectWebsite": [],
+      "language": [
+        "en"
+      ],
+      "objective": [
+        "Growing missile threats at the European borders, in the Asia-Pacific and in the Middle East and the strong dependency on third-party systems (i.e. sensors and interceptors) are driving the need of several European countries to steer towards sovereign solutions for early detection and tracking of ballistic missiles, hypersonic gliders and ASAT missiles.\nThe system studied in the frame of the project “ODIN’S EYE II” (multinatiOnal Development INitiative for a Space-based missilE earlY-warning architecturE II) features a multi-national and distributed architecture of layered space-borne sensors for hypersonic & ballistic missile early warning and tracking and an interoperable ground infrastructure.\nODIN’S EYE II will mainly focus on the following targets:\n•\tA SBMEW Architecture and CONOPS maturation, aiming to elaborate and consolidate SBMEW architecture and its pillars for joint missions;\n•\tThe development of an End-to-End SBMEW simulator;\n•\tBreadboards and technology de-risking activities, aimed to increase the maturity of key components, whose development may represent a critical path on the development plans.\nThe project, coordinated by OHB System in Germany, is built on the successful consortium (34 partners from 12 Member States) currently in place for the EDIDP 2020 ODIN’S EYE feasibility study. The consortium underpinning this follow-on project (comprised of 43 partners from 14 Member States and 7 subcontractors) will continue to support a balanced geographical (as well as geopolitical) distribution of partners across European Member States and associated countries.\nThe project is committed to leverage and consolidate collaborative efforts by Member States by developing a common Space-Based Missile Early Warning capability to respond. The system will also serve as the Early Warning pillar of the PESCO TWISTER project.\nFinally, ODIN’S EYE will provide an architecture that is coherent, complementary and interoperable with other systems, including non-EU systems (e.g. NATO systems)."
+      ],
+      "typeOfMGAs": [
+        "44175699"
+      ],
+      "freeKeywords": [
+        "Early-warning",
+        " surveillance",
+        " tracking",
+        " cueing",
+        " intelligence",
+        " SSA",
+        " SST",
+        " missile defence",
+        " satellites",
+        " collaborative systems",
+        " CONOPS",
+        " resilience",
+        " data processing",
+        " AI",
+        " technology de-risking",
+        " simulation"
+      ],
+      "DATASOURCE": [
+        "SEDIA_NONH2020_PROD"
+      ],
+      "subProgramme": [],
+      "overallBudget": [
+        "96595563.01"
+      ],
+      "pics": [
+        "989360037",
+        "920737969",
+        "999809265",
+        "898635452",
+        "932228201",
+        "972664300",
+        "952545239",
+        "998381813",
+        "999981731",
+        "911149131",
+        "999984059",
+        "999905004",
+        "999951758",
+        "999967084",
+        "999694708",
+        "999959130",
+        "996235688",
+        "904156207",
+        "903174373",
+        "998627417",
+        "936720271",
+        "998552824",
+        "999987066",
+        "999994438",
+        "885074270",
+        "990406085",
+        "899285837",
+        "998945674",
+        "924631840",
+        "918136526",
+        "999908205",
+        "999488195",
+        "999939051",
+        "999958936",
+        "999961555",
+        "999480241",
+        "999988909",
+        "999630009",
+        "891438440",
+        "898508382",
+        "999653095",
+        "990040007",
+        "997545285"
+      ],
+      "topicDescription": [],
+      "typeOfActions": [
+        "45095537"
+      ],
+      "es_ContentType": [
+        "text/plain"
+      ],
+      "programmePeriod": [
+        "2021 - 2027"
+      ],
+      "programmes": [
+        "European Defence Fund (EDF)"
+      ],
+      "countries": [
+        "20000873",
+        "20000873",
+        "20000890",
+        "20000873",
+        "20000890",
+        "20000832",
+        "20000883",
+        "20000873",
+        "20000873",
+        "20000944",
+        "20000873",
+        "20000883",
+        "20000873",
+        "20000873",
+        "20000922",
+        "20000883",
+        "20000902",
+        "20000885",
+        "20000974",
+        "20000922",
+        "20000890",
+        "20000890",
+        "20000973",
+        "20000890",
+        "20000974",
+        "20000973",
+        "20000883",
+        "20000839",
+        "20000873",
+        "20000986",
+        "20000890",
+        "20000922",
+        "20000922",
+        "20000875",
+        "20000890",
+        "20000973",
+        "20000973",
+        "20000873",
+        "20000873",
+        "20000902",
+        "20001001",
+        "20000922",
+        "20000873"
+      ],
+      "esST_URL": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101121453/EDF"
+      ],
+      "ecSignatureDate": [
+        "2023-12-13T00:00:00.000+0100"
+      ],
+      "esDA_QueueDate": [
+        "2024-12-27T01:54:49.783+0100"
+      ],
+      "topicId": [
+        "45113641"
+      ],
+      "programAbbreviation": [
+        "EDF"
+      ],
+      "projectId": [
+        "101121453"
+      ],
+      "startDate": [
+        "2024-09-04T01:00:00.000+0200"
+      ],
+      "status": [
+        "Ongoing"
+      ],
+      "subTypeOfAction": [],
+      "typeOfAction": [
+        "EDF Development Actions"
+      ],
+      "projectObjective": [
+        "Growing missile threats at the European borders, in the Asia-Pacific and in the Middle East and the strong dependency on third-party systems (i.e. sensors and interceptors) are driving the need of several European countries to steer towards sovereign solutions for early detection and tracking of ballistic missiles, hypersonic gliders and ASAT missiles.\nThe system studied in the frame of the project “ODIN’S EYE II” (multinatiOnal Development INitiative for a Space-based missilE earlY-warning architecturE II) features a multi-national and distributed architecture of layered space-borne sensors for hypersonic & ballistic missile early warning and tracking and an interoperable ground infrastructure.\nODIN’S EYE II will mainly focus on the following targets:\n•\tA SBMEW Architecture and CONOPS maturation, aiming to elaborate and consolidate SBMEW architecture and its pillars for joint missions;\n•\tThe development of an End-to-End SBMEW simulator;\n•\tBreadboards and technology de-risking activities, aimed to increase the maturity of key components, whose development may represent a critical path on the development plans.\nThe project, coordinated by OHB System in Germany, is built on the successful consortium (34 partners from 12 Member States) currently in place for the EDIDP 2020 ODIN’S EYE feasibility study. The consortium underpinning this follow-on project (comprised of 43 partners from 14 Member States and 7 subcontractors) will continue to support a balanced geographical (as well as geopolitical) distribution of partners across European Member States and associated countries.\nThe project is committed to leverage and consolidate collaborative efforts by Member States by developing a common Space-Based Missile Early Warning capability to respond. The system will also serve as the Early Warning pillar of the PESCO TWISTER project.\nFinally, ODIN’S EYE will provide an architecture that is coherent, complementary and interoperable with other systems, including non-EU systems (e.g. NATO systems)."
+      ],
+      "title": [
+        "multinatiOnal Development INitiative for a Space-based missilE earlY-warning architecture II"
+      ],
+      "esST_checksum": [
+        "63E27208A4862E08D9939D569B79D3D0F8841E6BD36645097F3C35501E46A987"
+      ],
+      "esST_FileName": [
+        "file.txt"
+      ],
+      "REFERENCE": [
+        "44181033101121453"
+      ],
+      "topicAbbreviation": [
+        "EDF-2022-DA-SPACE-SBMEW"
+      ],
+      "numberOfContributors": [
+        "43"
+      ],
+      "publicationsAvailable": [
+        "0"
+      ],
+      "participants": [
+        {
+          "role": "coordinator",
+          "pic": 989360037,
+          "legalName": "OHB SYSTEM AG",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "28359",
+            "street": "UNIVERSITATSALLEE 27-29",
+            "city": "Bremen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "53.1139736",
+          "longitude": "8.8602392",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "15866529.29",
+          "status": "Active",
+          "order": 1,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.ohb-system.de",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 920737969,
+          "legalName": "AIM INFRAROT-MODULE GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "74072",
+            "street": "THERESIENSTRASSE 2",
+            "city": "Heilbronn",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "49.135093350000005",
+          "longitude": "9.206243603638637",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "3783500",
+          "status": "Active",
+          "order": 2,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.aim-ir.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999809265,
+          "legalName": "AIRBUS DEFENCE AND SPACE SAS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "31402",
+            "street": "31 RUE DES COSMONAUTES ZI DU PALAYS",
+            "city": "Toulouse Cedex",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "43.6044622",
+          "longitude": "1.4442469",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "12281481.53",
+          "status": "Active",
+          "order": 3,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.airbusdefenceandspace.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 898635452,
+          "legalName": "AMDC GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "84094",
+            "street": "AM PANDURENBERG 4",
+            "city": "ELSENDORF",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.7101182",
+          "longitude": "11.8069746",
+          "activityType": "Other",
+          "eucontribution": "1020000",
+          "status": "Active",
+          "order": 4,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.amdc.de",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 932228201,
+          "legalName": "ARIANEGROUP SAS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "78130",
+            "street": "51-61 ROUTE DE VERNEUIL",
+            "city": "Les Mureaux",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.99715",
+          "longitude": "1.926708",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1540000",
+          "status": "Active",
+          "order": 5,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "ariane.group",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 972664300,
+          "legalName": "BEYOND GRAVITY AUSTRIA GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "1120",
+            "street": "STACHEGASSE 13",
+            "city": "Wien",
+            "countryCode": {
+              "id": 20000832,
+              "abbreviation": "AT",
+              "classId": null,
+              "context": null,
+              "description": "Austria",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.1619937",
+          "longitude": "16.3108285",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "151998.75",
+          "status": "Active",
+          "order": 6,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.beyondgravity.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 952545239,
+          "legalName": "DEIMOS ENGINEERING AND SYSTEMS SLU",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "13500",
+            "street": "C FRANCIA 9 POLIGONO INDUSTRIAL LA NAVA III",
+            "city": "PUERTOLLANO",
+            "countryCode": {
+              "id": 20000883,
+              "abbreviation": "ES",
+              "classId": null,
+              "context": null,
+              "description": "Spain",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "38.6867422",
+          "longitude": "-4.1034884",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "2065000",
+          "status": "Active",
+          "order": 7,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.elecnor-deimos.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 998381813,
+          "legalName": "DIEHL DEFENCE GMBH & CO. KG",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "88662",
+            "street": "ALTE NUSSDORFER STRASSE 13",
+            "city": "Uberlingen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "47.757462700000005",
+          "longitude": "9.188817208348109",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1617589.79",
+          "status": "Active",
+          "order": 8,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "http://www.diehl.com/defence",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999981731,
+          "legalName": "DEUTSCHES ZENTRUM FUR LUFT - UND RAUMFAHRT EV",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "51147",
+            "street": "LINDER HOHE",
+            "city": "Koln",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "50.848867",
+          "longitude": "7.111538417241022",
+          "activityType": "Research organisation",
+          "eucontribution": "230000",
+          "status": "Active",
+          "order": 9,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.dlr.de",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 911149131,
+          "legalName": "UAB NOVIAN PRO",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "01109",
+            "street": "GYNEJU G 14",
+            "city": "VILNIUS",
+            "countryCode": {
+              "id": 20000944,
+              "abbreviation": "LT",
+              "classId": null,
+              "context": null,
+              "description": "Lithuania",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "54.69263",
+          "longitude": "25.2643356",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "440000",
+          "status": "Active",
+          "order": 10,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "https://novian.io/novian-pro/",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999984059,
+          "legalName": "FRAUNHOFER GESELLSCHAFT ZUR FORDERUNG DER ANGEWANDTEN FORSCHUNG EV",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "80686",
+            "street": "HANSASTRASSE 27C",
+            "city": "Munchen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.1322664",
+          "longitude": "11.5296222",
+          "activityType": "Other",
+          "eucontribution": "741920.74",
+          "status": "Active",
+          "order": 11,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.fraunhofer.de",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999905004,
+          "legalName": "GMV AEROSPACE AND DEFENCE SA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "28760",
+            "street": "CALLE ISAAC NEWTON PARQUE TECNOLOGICO DE MADRID",
+            "city": "Tres Cantos",
+            "countryCode": {
+              "id": 20000883,
+              "abbreviation": "ES",
+              "classId": null,
+              "context": null,
+              "description": "Spain",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "40.5943864",
+          "longitude": "-3.7084131",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "2850000",
+          "status": "Active",
+          "order": 12,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.gmv.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999951758,
+          "legalName": "HENSOLDT OPTRONICS GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "73447",
+            "street": "CARL ZEISS STRASSE 22",
+            "city": "Oberkochen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.7832568",
+          "longitude": "10.100716",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "2750464.55",
+          "status": "Active",
+          "order": 13,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.hensoldt.net",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999967084,
+          "legalName": "INDUSTRIEANLAGEN BETRIEBSGESELLSCHAFT MBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "85521",
+            "street": "EINSTEINSTRASSE 20",
+            "city": "Ottobrunn",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.0643823",
+          "longitude": "11.6675042",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "289813.49",
+          "status": "Active",
+          "order": 14,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.iabg.de",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999694708,
+          "legalName": "ISTITUTO AFFARI INTERNAZIONALI",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00186",
+            "street": "VIA DEI MONTECATINI  17",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.8995787",
+          "longitude": "12.4783776",
+          "activityType": "Research organisation",
+          "eucontribution": "210000",
+          "status": "Active",
+          "order": 15,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.iai.it",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 999959130,
+          "legalName": "INDRA SISTEMAS SA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "28108",
+            "street": "AVENIDA DE BRUSELAS 35",
+            "city": "Alcobendas Madrid",
+            "countryCode": {
+              "id": 20000883,
+              "abbreviation": "ES",
+              "classId": null,
+              "context": null,
+              "description": "Spain",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "40.52917035",
+          "longitude": "-3.6414349825450647",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "2140000",
+          "status": "Active",
+          "order": 16,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.indracompany.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 996235688,
+          "legalName": "INTRACOM DEFENSE AE",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "19400",
+            "street": "NEW ROAD PEANIA 21 KM MARKOPOULOU",
+            "city": "KOROPI",
+            "countryCode": {
+              "id": 20000902,
+              "abbreviation": "EL",
+              "classId": null,
+              "context": null,
+              "description": "Greece",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "38.9953683",
+          "longitude": "21.9877132",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "659875",
+          "status": "Active",
+          "order": 17,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.intracomdefense.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 904156207,
+          "legalName": "ISAWARE OY",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00560",
+            "street": "ERIK PALMENIN AUKIO 1",
+            "city": "Helsinki",
+            "countryCode": {
+              "id": 20000885,
+              "abbreviation": "FI",
+              "classId": null,
+              "context": null,
+              "description": "Finland",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "60.2036887",
+          "longitude": "24.9612813",
+          "activityType": "Other",
+          "eucontribution": "2176750",
+          "status": "Active",
+          "order": 18,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.isaware.fi",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 903174373,
+          "legalName": "KONGSBERG DEFENCE & AEROSPACE AS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "3616",
+            "street": "KIRKEGARDSVEIEN 45",
+            "city": "Kongsberg",
+            "countryCode": {
+              "id": 20000974,
+              "abbreviation": "NO",
+              "classId": null,
+              "context": null,
+              "description": "Norway",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "59.6569434",
+          "longitude": "9.6446815",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1230000",
+          "status": "Active",
+          "order": 19,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.kongsberg.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 998627417,
+          "legalName": "LEONARDO - SOCIETA PER  AZIONI",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00195",
+            "street": "PIAZZA MONTE GRAPPA 4",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9182673",
+          "longitude": "12.4690749",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "6141555.72",
+          "status": "Active",
+          "order": 20,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.leonardo.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 936720271,
+          "legalName": "LYNRED",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "91120",
+            "street": "AVENUE DE LA VAUVE",
+            "city": "Palaiseau",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.71683425",
+          "longitude": "2.200578838130138",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "2000000",
+          "status": "Active",
+          "order": 21,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.lynred.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 998552824,
+          "legalName": "MBDA FRANCE",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "92358",
+            "street": "1 AVENUE REAUMUR",
+            "city": "Le Plessis-Robinson",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.7811049",
+          "longitude": "2.2619632",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "400000",
+          "status": "Active",
+          "order": 22,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.mbda-systems.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999987066,
+          "legalName": "STICHTING KONINKLIJK NEDERLANDS LUCHT - EN RUIMTEVAARTCENTRUM",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "1059 CM",
+            "street": "ANTHONY FOKKERWEG 2",
+            "city": "Amsterdam",
+            "countryCode": {
+              "id": 20000973,
+              "abbreviation": "NL",
+              "classId": null,
+              "context": null,
+              "description": "Netherlands",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "52.3451042",
+          "longitude": "4.8438265",
+          "activityType": "Research organisation",
+          "eucontribution": "740000",
+          "status": "Active",
+          "order": 23,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.nlr.nl",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999994438,
+          "legalName": "OFFICE NATIONAL D'ETUDES ET DE RECHERCHES AEROSPATIALES",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "91120",
+            "street": "CHEMIN DE LA HUNIERE",
+            "city": "Palaiseau",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.7095551",
+          "longitude": "2.2233675",
+          "activityType": "Research organisation",
+          "eucontribution": "519740",
+          "status": "Active",
+          "order": 24,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.onera.fr",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 885074270,
+          "legalName": "RHEINMETALL NORWAY AS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "3133",
+            "street": "STEINKLOSSVEIEN 14",
+            "city": "DUKEN",
+            "countryCode": {
+              "id": 20000974,
+              "abbreviation": "NO",
+              "classId": null,
+              "context": null,
+              "description": "Norway",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "59.2179475",
+          "longitude": "10.4532654",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "990000",
+          "status": "Active",
+          "order": 25,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 990406085,
+          "legalName": "SCIENCE AND TECHNOLOGY BV",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "2616 LR",
+            "street": "OLOF PALMESTRAAT 14",
+            "city": "Delft",
+            "countryCode": {
+              "id": 20000973,
+              "abbreviation": "NL",
+              "classId": null,
+              "context": null,
+              "description": "Netherlands",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "52.0143249",
+          "longitude": "4.3761556",
+          "activityType": "Other",
+          "eucontribution": "330000",
+          "status": "Active",
+          "order": 26,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "https://www.stcorp.nl/",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 899285837,
+          "legalName": "SENER AEROESPACIAL SOCIEDAD ANONIMA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "48930",
+            "street": "AVDA ZUGAZARTE 56",
+            "city": "Las Arenas",
+            "countryCode": {
+              "id": 20000883,
+              "abbreviation": "ES",
+              "classId": null,
+              "context": null,
+              "description": "Spain",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "43.3270799",
+          "longitude": "-3.0171911467617747",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "5062500.05",
+          "status": "Active",
+          "order": 27,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.aeroespacial.sener",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 998945674,
+          "legalName": "SPACEBEL SA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "4031",
+            "street": "RUE DES CHASSEURS ARDENNAIS   6",
+            "city": "Liege Angleur",
+            "countryCode": {
+              "id": 20000839,
+              "abbreviation": "BE",
+              "classId": null,
+              "context": null,
+              "description": "Belgium",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "50.5996947",
+          "longitude": "5.566456642765143",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1000000",
+          "status": "Active",
+          "order": 28,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 924631840,
+          "legalName": "ST ANALYTICS GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "81669",
+            "street": "FRANZISKANERSTRASSE 9A",
+            "city": "Munchen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.1214771",
+          "longitude": "11.5952108",
+          "activityType": "Other",
+          "eucontribution": "308125",
+          "status": "Active",
+          "order": 29,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.st-analytics.de",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 918136526,
+          "legalName": "SYBILLA TECHNOLOGIES SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "85-023",
+            "street": "UL. TORUNSKA 59",
+            "city": "Bydgoszcz",
+            "countryCode": {
+              "id": 20000986,
+              "abbreviation": "PL",
+              "classId": null,
+              "context": null,
+              "description": "Poland",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "53.0956342",
+          "longitude": "18.081248050840248",
+          "activityType": "Other",
+          "eucontribution": "1055000",
+          "status": "Active",
+          "order": 30,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.sybillatechnologies.com",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 999908205,
+          "legalName": "THALES ALENIA SPACE FRANCE SAS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "31100",
+            "street": "AVENUE JEAN FRANCOIS CHAMPOLLION 26",
+            "city": "Toulouse",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "43.5476997",
+          "longitude": "1.3941094",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "6649995",
+          "status": "Active",
+          "order": 31,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.thalesaleniaspace.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999488195,
+          "legalName": "THALES ALENIA SPACE ITALIA SPA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00131",
+            "street": "VIA SACCOMURO 24",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9359863",
+          "longitude": "12.6088338",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "2588000",
+          "status": "Active",
+          "order": 32,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.thalesaleniaspace.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999939051,
+          "legalName": "TELESPAZIO SPA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00156",
+            "street": "VIA TIBURTINA 965",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9294632",
+          "longitude": "12.5768065",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1699437.28",
+          "status": "Active",
+          "order": 33,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.telespazio.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999958936,
+          "legalName": "TERMA AS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "8520",
+            "street": "HOVMARKEN 4",
+            "city": "Lystrup",
+            "countryCode": {
+              "id": 20000875,
+              "abbreviation": "DK",
+              "classId": null,
+              "context": null,
+              "description": "Denmark",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "56.234101",
+          "longitude": "10.241841",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "220000",
+          "status": "Active",
+          "order": 34,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999961555,
+          "legalName": "THALES LAS FRANCE SAS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "78990",
+            "street": "AVENUE GAY LUSSAC 2",
+            "city": "Elancourt",
+            "countryCode": {
+              "id": 20000890,
+              "abbreviation": "FR",
+              "classId": null,
+              "context": null,
+              "description": "France",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.7906419",
+          "longitude": "1.9741698",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1350085",
+          "status": "Active",
+          "order": 35,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.thalesgroup.com",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999480241,
+          "legalName": "THALES NEDERLAND BV",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "7554 RR",
+            "street": "ZUIDELIJKE HAVENWEG 40",
+            "city": "Hengelo Ov",
+            "countryCode": {
+              "id": 20000973,
+              "abbreviation": "NL",
+              "classId": null,
+              "context": null,
+              "description": "Netherlands",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "52.2483001",
+          "longitude": "6.7728129",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "1101600",
+          "status": "Active",
+          "order": 36,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.thales-nederland.nl",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999988909,
+          "legalName": "NEDERLANDSE ORGANISATIE VOOR TOEGEPAST NATUURWETENSCHAPPELIJK ONDERZOEK TNO",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "2595 DA",
+            "street": "ANNA VAN BUERENPLEIN 1",
+            "city": "Den Haag",
+            "countryCode": {
+              "id": 20000973,
+              "abbreviation": "NL",
+              "classId": null,
+              "context": null,
+              "description": "Netherlands",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "52.0822233",
+          "longitude": "4.3257144",
+          "activityType": "Research organisation",
+          "eucontribution": "1160000",
+          "status": "Active",
+          "order": 37,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.tno.nl",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999630009,
+          "legalName": "UNIVERSITAET DER BUNDESWEHR MUENCHEN",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "85579",
+            "street": "WERNER HEISENBERG WEG 39",
+            "city": "Neubiberg",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.075722",
+          "longitude": "11.6513008",
+          "activityType": "HSE",
+          "eucontribution": "752000",
+          "status": "Active",
+          "order": 38,
+          "organizationType": null,
+          "type": "HES",
+          "webLink": "www.unibw.de",
+          "sme": false
+        },
+        {
+          "role": "thirdParty",
+          "pic": 891438440,
+          "legalName": "OHB DIGITAL CONNECT GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "28359",
+            "street": "MANFRED-FUCHS-PLATZ 2-4",
+            "city": "Bremen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "53.0758196",
+          "longitude": "8.8071646",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "3075095.06",
+          "status": "Active",
+          "order": 1,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.ohb.de/digital",
+          "sme": false
+        },
+        {
+          "role": "thirdParty",
+          "pic": 898508382,
+          "legalName": "OHB HELLAS MONOPROSOPI ETAIREIA PERIORISMENIS EFTHINIS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "151 24",
+            "street": "IMVROU 1",
+            "city": "MAROUSI",
+            "countryCode": {
+              "id": 20000902,
+              "abbreviation": "EL",
+              "classId": null,
+              "context": null,
+              "description": "Greece",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "38.045574349999995",
+          "longitude": "23.805270162605616",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "400000",
+          "status": "Active",
+          "order": 1,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "http://www.ohb-hellas.gr",
+          "sme": false
+        },
+        {
+          "role": "thirdParty",
+          "pic": 999653095,
+          "legalName": "BEYOND GRAVITY SWEDEN AB",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "405 15",
+            "street": "SOLHUSGATAN 11",
+            "city": "Goteborg",
+            "countryCode": {
+              "id": 20001001,
+              "abbreviation": "SE",
+              "classId": null,
+              "context": null,
+              "description": "Sweden",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "57.7063369",
+          "longitude": "11.9441986",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "81943.75",
+          "status": "Active",
+          "order": 6,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "",
+          "sme": false
+        },
+        {
+          "role": "thirdParty",
+          "pic": 990040007,
+          "legalName": "MBDA ITALIA SPA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00131",
+            "street": "VIA MONTE FLAVIO 45",
+            "city": "Roma",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9323544",
+          "longitude": "12.6143339",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "150000",
+          "status": "Active",
+          "order": 22,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "http://www.mbda-systems.com/",
+          "sme": false
+        },
+        {
+          "role": "thirdParty",
+          "pic": 997545285,
+          "legalName": "MBDA DEUTSCHLAND GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "86529",
+            "street": "HAGENAUER FORST 27",
+            "city": "Schrobenhausen",
+            "countryCode": {
+              "id": 20000873,
+              "abbreviation": "DE",
+              "classId": null,
+              "context": null,
+              "description": "Germany",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.5702854",
+          "longitude": "11.2149263052905",
+          "activityType": "Private for profit organisation",
+          "eucontribution": "180000",
+          "status": "Active",
+          "order": 22,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.mbda-systems.com",
+          "sme": false
+        }
+      ],
+      "acronym": [
+        "ODINS EYE II"
+      ],
+      "esDA_FirstIngestDate": [
+        "2024-11-25T15:24:00.025+0100"
+      ],
+      "esDA_IngestDate": [
+        "2024-12-27T01:54:49.804+0100"
+      ],
+      "legalEntityNames": [
+        "OHB SYSTEM AG",
+        "AIM INFRAROT-MODULE GMBH",
+        "AIRBUS DEFENCE AND SPACE SAS",
+        "AMDC GMBH",
+        "ARIANEGROUP SAS",
+        "BEYOND GRAVITY AUSTRIA GMBH",
+        "DEIMOS ENGINEERING AND SYSTEMS SLU",
+        "DIEHL DEFENCE GMBH & CO. KG",
+        "DEUTSCHES ZENTRUM FUR LUFT - UND RAUMFAHRT EV",
+        "UAB NOVIAN PRO",
+        "FRAUNHOFER GESELLSCHAFT ZUR FORDERUNG DER ANGEWANDTEN FORSCHUNG EV",
+        "GMV AEROSPACE AND DEFENCE SA",
+        "HENSOLDT OPTRONICS GMBH",
+        "INDUSTRIEANLAGEN BETRIEBSGESELLSCHAFT MBH",
+        "ISTITUTO AFFARI INTERNAZIONALI",
+        "INDRA SISTEMAS SA",
+        "INTRACOM DEFENSE AE",
+        "ISAWARE OY",
+        "KONGSBERG DEFENCE & AEROSPACE AS",
+        "LEONARDO - SOCIETA PER  AZIONI",
+        "LYNRED",
+        "MBDA FRANCE",
+        "STICHTING KONINKLIJK NEDERLANDS LUCHT - EN RUIMTEVAARTCENTRUM",
+        "OFFICE NATIONAL D'ETUDES ET DE RECHERCHES AEROSPATIALES",
+        "RHEINMETALL NORWAY AS",
+        "SCIENCE AND TECHNOLOGY BV",
+        "SENER AEROESPACIAL SOCIEDAD ANONIMA",
+        "SPACEBEL SA",
+        "ST ANALYTICS GMBH",
+        "SYBILLA TECHNOLOGIES SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA",
+        "THALES ALENIA SPACE FRANCE SAS",
+        "THALES ALENIA SPACE ITALIA SPA",
+        "TELESPAZIO SPA",
+        "TERMA AS",
+        "THALES LAS FRANCE SAS",
+        "THALES NEDERLAND BV",
+        "NEDERLANDSE ORGANISATIE VOOR TOEGEPAST NATUURWETENSCHAPPELIJK ONDERZOEK TNO",
+        "UNIVERSITAET DER BUNDESWEHR MUENCHEN",
+        "OHB DIGITAL CONNECT GMBH",
+        "OHB HELLAS MONOPROSOPI ETAIREIA PERIORISMENIS EFTHINIS",
+        "BEYOND GRAVITY SWEDEN AB",
+        "MBDA ITALIA SPA",
+        "MBDA DEUTSCHLAND GMBH"
+      ],
+      "euContributionRate": [
+        "93.17"
+      ],
+      "url": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101121453/EDF"
+      ],
+      "euContributionAmount": [
+        "90000000"
+      ],
+      "programDescription": [
+        "European Defence Fund (EDF)"
+      ],
+      "nutsCode": [
+        "DE50",
+        "DE11",
+        "FRJ2",
+        "DE22",
+        "FR10",
+        "AT13",
+        "ES42",
+        "DE14",
+        "DEA2",
+        "LT01",
+        "DE21",
+        "ES30",
+        "DE11",
+        "DE21",
+        "ITI4",
+        "ES30",
+        "EL64",
+        "FI1B",
+        "NO08",
+        "ITI4",
+        "FR10",
+        "FR10",
+        "NL32",
+        "FR10",
+        "NO09",
+        "NL33",
+        "ES21",
+        "BE33",
+        "DE21",
+        "PL61",
+        "FRJ2",
+        "ITI4",
+        "ITI4",
+        "DK04",
+        "FR10",
+        "NL21",
+        "NL33",
+        "DE21",
+        "DE50",
+        "EL30",
+        "SE23",
+        "ITI4",
+        "DE21"
+      ],
+      "fundedUnder": [
+        "European Defence Fund (EDF)"
+      ],
+      "programId": [
+        "44181033"
+      ],
+      "summaries": [],
+      "publications": [
+        "[]"
+      ]
+    },
+    "enrichedMetadata": {},
+    "children": [],
+    "highlightedFragments": []
+  },
+  {
+    "apiVersion": "2.129",
+    "reference": "44181033101168119",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101168119/EDF",
+    "title": null,
+    "contentType": "text/plain",
+    "language": "en",
+    "databaseLabel": "SEDIA_NONH2020_PROD",
+    "database": "SEDIA_NONH2020_PROD",
+    "summary": "Zero emissions in a circular military economy: from military individual equipment waste to food and energy",
+    "weight": 0.0,
+    "groupById": null,
+    "content": "Zero emissions in a circular military economy: from military individual equipment waste to food and energy",
+    "accessRestriction": false,
+    "pages": null,
+    "checksum": "B238774B833E235084897DB9901D9336B24D8228D4B580238F2AF90ECD172FBF",
+    "metadata": {
+      "es_SortDate": [
+        "2024-12-29T12:11:27.539+0100"
+      ],
+      "endDate": [
+        "2026-11-30T00:00:00.000+0100"
+      ],
+      "projectWebsite": [],
+      "language": [
+        "en"
+      ],
+      "objective": [
+        "\"The ZEROWASTE project uses advanced biotechnologies to produce energy and food for military personnel. The project aims to design systems that can be installed in isolated infrastructure or operational fields, ensuring the disposal of individual military equipment, recovering and reusing CO2 to grow photosynthetic microalgae cells, and producing fresh food and nutraceuticals. Thus, the project also wants to design a modern, sustainable, and clean energy system using wood-based waste materials, transforming wood waste into renewable biofuel (pyrolysis oil) using a thermal process.\n\nThe ZEROWASTE project aims to apply natural and renewable biofuel and food technologies for the defence sector, reducing the European Union's dependence on fossil fuels. It focuses on the digestion of military cloths, the production of microalgae, CO2 capturing, and the pyrolysis of wood waste. The project has the potential to be applied to space exploration missions and to new generation of jet-fuel.  \n\nThe project focuses on designing sub-systems based on functional requirements, technical setups, and check-lists, ensuring the longevity of components. It aims to contribute to the sustainability and resilience of military operations while reducing environmental impacts and costs. ZEROWASTE is innovative in several ways, including decomposing solid organic materials or synthetic fibers into macromolecules, transforming wood waste into energy, and converting wood waste into storable fuel. This \"\"win-win\"\" strategy reduces environmental impacts and costs while promoting the sustainability and resilience of military operations.\n\nAll components, including microalgae, filters, pipes, engines, electronics, algorithms, and procedures, will be designed within the EU, with materials, technology, and knowledge coming exclusively from EU resources and industries. The consortium consists of seven participants from six European countries with expertise in environmental, chemical, engineering, and biotech.\""
+      ],
+      "typeOfMGAs": [
+        "45095551"
+      ],
+      "freeKeywords": [
+        "Energy",
+        " Food",
+        " Oxygen",
+        " Jet-fuel",
+        " Defence",
+        " Innovation",
+        " Reuse",
+        " Recycling",
+        " Individual military equipment"
+      ],
+      "DATASOURCE": [
+        "SEDIA_NONH2020_PROD"
+      ],
+      "subProgramme": [],
+      "overallBudget": [
+        "2413788"
+      ],
+      "pics": [
+        "890612291",
+        "888362279",
+        "951630432",
+        "999894916",
+        "999663474",
+        "884099420",
+        "995413613"
+      ],
+      "topicDescription": [],
+      "typeOfActions": [
+        "45095543"
+      ],
+      "es_ContentType": [
+        "text/plain"
+      ],
+      "programmePeriod": [
+        "2021 - 2027"
+      ],
+      "programmes": [
+        "European Defence Fund (EDF)"
+      ],
+      "countries": [
+        "20001001",
+        "20000902",
+        "20000922",
+        "20000990",
+        "20000832",
+        "20000902",
+        "20000973"
+      ],
+      "esST_URL": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101168119/EDF"
+      ],
+      "ecSignatureDate": [
+        "2024-11-26T00:00:00.000+0100"
+      ],
+      "esDA_QueueDate": [
+        "2024-12-29T12:11:27.587+0100"
+      ],
+      "topicId": [
+        "46029402"
+      ],
+      "programAbbreviation": [
+        "EDF"
+      ],
+      "projectId": [
+        "101168119"
+      ],
+      "startDate": [
+        "2024-12-01T00:00:00.000+0100"
+      ],
+      "status": [
+        "Ongoing"
+      ],
+      "subTypeOfAction": [],
+      "typeOfAction": [
+        "EDF Lump Sum Grants"
+      ],
+      "projectObjective": [
+        "\"The ZEROWASTE project uses advanced biotechnologies to produce energy and food for military personnel. The project aims to design systems that can be installed in isolated infrastructure or operational fields, ensuring the disposal of individual military equipment, recovering and reusing CO2 to grow photosynthetic microalgae cells, and producing fresh food and nutraceuticals. Thus, the project also wants to design a modern, sustainable, and clean energy system using wood-based waste materials, transforming wood waste into renewable biofuel (pyrolysis oil) using a thermal process.\n\nThe ZEROWASTE project aims to apply natural and renewable biofuel and food technologies for the defence sector, reducing the European Union's dependence on fossil fuels. It focuses on the digestion of military cloths, the production of microalgae, CO2 capturing, and the pyrolysis of wood waste. The project has the potential to be applied to space exploration missions and to new generation of jet-fuel.  \n\nThe project focuses on designing sub-systems based on functional requirements, technical setups, and check-lists, ensuring the longevity of components. It aims to contribute to the sustainability and resilience of military operations while reducing environmental impacts and costs. ZEROWASTE is innovative in several ways, including decomposing solid organic materials or synthetic fibers into macromolecules, transforming wood waste into energy, and converting wood waste into storable fuel. This \"\"win-win\"\" strategy reduces environmental impacts and costs while promoting the sustainability and resilience of military operations.\n\nAll components, including microalgae, filters, pipes, engines, electronics, algorithms, and procedures, will be designed within the EU, with materials, technology, and knowledge coming exclusively from EU resources and industries. The consortium consists of seven participants from six European countries with expertise in environmental, chemical, engineering, and biotech.\""
+      ],
+      "title": [
+        "Zero emissions in a circular military economy: from military individual equipment waste to food and energy"
+      ],
+      "esST_checksum": [
+        "B238774B833E235084897DB9901D9336B24D8228D4B580238F2AF90ECD172FBF"
+      ],
+      "esST_FileName": [
+        "file.txt"
+      ],
+      "REFERENCE": [
+        "44181033101168119"
+      ],
+      "topicAbbreviation": [
+        "EDF-2023-LS-RA-SMERO-NT"
+      ],
+      "numberOfContributors": [
+        "7"
+      ],
+      "publicationsAvailable": [
+        "0"
+      ],
+      "participants": [
+        {
+          "role": "coordinator",
+          "pic": 890612291,
+          "legalName": "AGRICLIMA CONSULTING AB",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "265 74",
+            "street": "GLASBLASAREGATAN 23 D",
+            "city": "HYLLINGE",
+            "countryCode": {
+              "id": 20001001,
+              "abbreviation": "SE",
+              "classId": null,
+              "context": null,
+              "description": "Sweden",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "59.6749712",
+          "longitude": "14.5208584",
+          "activityType": "Other",
+          "eucontribution": "461082.75",
+          "status": "Active",
+          "order": 1,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.agriclima.eu",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 888362279,
+          "legalName": "SOTIRIA TECHNOLOGY MONOPROSOPI IDIOTIKI KEFALAIOUCHIKI ETAIREIA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "104 31",
+            "street": "9 OMONIA SQUARE",
+            "city": "ATHENS",
+            "countryCode": {
+              "id": 20000902,
+              "abbreviation": "EL",
+              "classId": null,
+              "context": null,
+              "description": "Greece",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "38.9953683",
+          "longitude": "21.9877132",
+          "activityType": "Other",
+          "eucontribution": "372500",
+          "status": "Active",
+          "order": 2,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.sotiria.tech",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 951630432,
+          "legalName": "CONSORZIO PER L'INNOVAZIONE E LA BIOECONOMIA",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "00100",
+            "street": "CENTRO RICERCHE CASACCIA FRAZIONE SANTA MARIA GALERIA",
+            "city": "ROMA",
+            "countryCode": {
+              "id": 20000922,
+              "abbreviation": "IT",
+              "classId": null,
+              "context": null,
+              "description": "Italy",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.9244045",
+          "longitude": "12.4521318",
+          "activityType": "Research organisation",
+          "eucontribution": "290250",
+          "status": "Active",
+          "order": 3,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.inbio.it",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999894916,
+          "legalName": "UNIVERSIDADE DO PORTO",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "4099-002",
+            "street": "PRACA GOMES TEIXEIRA",
+            "city": "Porto",
+            "countryCode": {
+              "id": 20000990,
+              "abbreviation": "PT",
+              "classId": null,
+              "context": null,
+              "description": "Portugal",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "41.146511399999994",
+          "longitude": "-8.615766789175847",
+          "activityType": "HSE",
+          "eucontribution": "267472.5",
+          "status": "Active",
+          "order": 4,
+          "organizationType": null,
+          "type": "HES",
+          "webLink": "www.up.pt",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 999663474,
+          "legalName": "FH OO FORSCHUNGS & ENTWICKLUNGS GMBH",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "4600",
+            "street": "ROSEGGERSTRASSE 15",
+            "city": "Wels",
+            "countryCode": {
+              "id": 20000832,
+              "abbreviation": "AT",
+              "classId": null,
+              "context": null,
+              "description": "Austria",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "48.165732000000006",
+          "longitude": "13.984416798172166",
+          "activityType": "Research organisation",
+          "eucontribution": "372681.25",
+          "status": "Active",
+          "order": 5,
+          "organizationType": null,
+          "type": "REC",
+          "webLink": "www.fh-ooe.at",
+          "sme": false
+        },
+        {
+          "role": "participant",
+          "pic": 884099420,
+          "legalName": "PRINSUS I.K.E. TECHNOVLASTOS",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "15780",
+            "street": "IROON POLYTECHNEIOU 9",
+            "city": "ZOGRAFOU, ATHENS",
+            "countryCode": {
+              "id": 20000902,
+              "abbreviation": "EL",
+              "classId": null,
+              "context": null,
+              "description": "Greece",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "38.9953683",
+          "longitude": "21.9877132",
+          "activityType": "Other",
+          "eucontribution": "268319.8",
+          "status": "Active",
+          "order": 6,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "www.prinsus.eu",
+          "sme": true
+        },
+        {
+          "role": "participant",
+          "pic": 995413613,
+          "legalName": "BTG BIOLIQUIDS BV",
+          "postalAddress": {
+            "id": 0,
+            "abbreviation": null,
+            "classId": null,
+            "context": null,
+            "description": null,
+            "postalCode": "7545 PN",
+            "street": "JOSINK ESWEG 28",
+            "city": "ENSCHEDE",
+            "countryCode": {
+              "id": 20000973,
+              "abbreviation": "NL",
+              "classId": null,
+              "context": null,
+              "description": "Netherlands",
+              "postalCode": null,
+              "street": null,
+              "city": null,
+              "countryCode": null
+            }
+          },
+          "latitude": "52.1709478",
+          "longitude": "6.8087553",
+          "activityType": "Other",
+          "eucontribution": "381481.7",
+          "status": "Active",
+          "order": 7,
+          "organizationType": null,
+          "type": "PRC",
+          "webLink": "http://www.btg-bioliquids.com",
+          "sme": true
+        }
+      ],
+      "acronym": [
+        "ZEROWASTE"
+      ],
+      "esDA_FirstIngestDate": [
+        "2024-12-02T05:32:44.275+0100"
+      ],
+      "esDA_IngestDate": [
+        "2024-12-29T12:11:27.601+0100"
+      ],
+      "legalEntityNames": [
+        "AGRICLIMA CONSULTING AB",
+        "SOTIRIA TECHNOLOGY MONOPROSOPI IDIOTIKI KEFALAIOUCHIKI ETAIREIA",
+        "CONSORZIO PER L'INNOVAZIONE E LA BIOECONOMIA",
+        "UNIVERSIDADE DO PORTO",
+        "FH OO FORSCHUNGS & ENTWICKLUNGS GMBH",
+        "PRINSUS I.K.E. TECHNOVLASTOS",
+        "BTG BIOLIQUIDS BV"
+      ],
+      "euContributionRate": [],
+      "url": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/projects-details/44181033/101168119/EDF"
+      ],
+      "euContributionAmount": [
+        "2413788"
+      ],
+      "programDescription": [
+        "European Defence Fund (EDF)"
+      ],
+      "nutsCode": [
+        "SE12",
+        "EL64",
+        "ITI4",
+        "PT11",
+        "AT31",
+        "EL64",
+        "NL21"
+      ],
+      "fundedUnder": [
+        "European Defence Fund (EDF)"
+      ],
+      "programId": [
+        "44181033"
+      ],
+      "summaries": [],
+      "publications": [
+        "[]"
+      ]
+    },
+    "enrichedMetadata": {},
+    "children": [],
+    "highlightedFragments": []
+  }
+]
