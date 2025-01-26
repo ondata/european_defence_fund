@@ -7,7 +7,7 @@ set -u    # Considera variabili non definite come errore
 set -o pipefail  # Considera l'intera pipeline come fallita se un comando fallisce
 
 # Verifica dipendenze necessarie
-for program in curl jq; do
+for program in curl jq flatterer; do
     if ! command -v "$program" >/dev/null 2>&1; then
         echo "Errore: $program non è installato"
         exit 1
