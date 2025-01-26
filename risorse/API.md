@@ -19,6 +19,11 @@ Il program ID dell'EDF è `44181033`. Nome parametro: `programId`.
   - **Grant**: 1 (Sovvenzione)
   - **Cascade funding calls**: 8 (Chiamate a cascata per finanziamenti)
 
+## File utili
+
+- [most frequently used code list for search fields](../risorse/basic_code_list.xlsx)
+- [sample set of postman requests](../risorse/postman_collection.json)
+
 ## Query di esempio
 
 ### Call for proposal EDF
