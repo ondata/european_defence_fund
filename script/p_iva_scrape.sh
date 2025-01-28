@@ -56,7 +56,7 @@ while IFS= read -r line; do
                 echo "$page_content" > "${folder}/tmp/enea_debug.html"
             fi
             # Look for VAT numbers in various formats, including those with IT prefix
-            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|P\.IVA/C\.F\.|P\.Iva/C\.Fis|Partita IVA)[[:space:]]*[^A-Za-z]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
+            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT[[:space:]]*IT|IVA|PI|P.IVA|P\.IVA/C\.F\.|P\.Iva/C\.Fis|Partita IVA)[[:space:]:]*[^A-Za-z]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
                 if [ ! -z "$vat_numbers" ]; then
                     
                     # Add new entry to JSON array with both original and effective URLs
