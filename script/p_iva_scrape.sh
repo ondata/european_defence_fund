@@ -25,11 +25,17 @@ cp "$vat_file" "${folder}"/tmp/vat_numbers.json
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
     
-    # Check if PIC already exists in vat_numbers.json
-    existing_entry=$(jq --arg pic "$pic" '.[] | select(.pic == $pic)' "${folder}"/tmp/vat_numbers.json)
+    # Check if PIC already exists with a VAT number in vat_numbers.json
+    existing_entry=$(jq --arg pic "$pic" '.[] | select(.pic == $pic and .vat_numbers != "")' "${folder}"/tmp/vat_numbers.json)
     if [ ! -z "$existing_entry" ]; then
-        echo "PIC $pic already processed, skipping..."
+        echo "PIC $pic already has VAT number, skipping..."
         continue
+    fi
+
+    # Check if PIC exists but without VAT number
+    existing_empty=$(jq --arg pic "$pic" '.[] | select(.pic == $pic and .vat_numbers == "")' "${folder}"/tmp/vat_numbers.json)
+    if [ ! -z "$existing_empty" ]; then
+        echo "PIC $pic exists but has no VAT number, will try again..."
     fi
 
     url=$(echo "$line" | jq -r '.webLink')
