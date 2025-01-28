@@ -83,8 +83,8 @@ while IFS= read -r line; do
            "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
     fi
 
-    # Add small delay to be nice to servers
-    sleep 0
+    # Add delay to respect LLM rate limit (13 requests/minute max)
+    sleep 5
 
 done < "${folder}"/tmp/italian_participants.jsonl
 
