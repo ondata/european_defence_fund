@@ -66,7 +66,7 @@ while IFS= read -r line; do
     fi
 
     # Add small delay to be nice to servers
-    sleep 2
+    sleep 0
 
 done < "${folder}"/tmp/italian_participants.jsonl
 
