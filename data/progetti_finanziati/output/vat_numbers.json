@@ -1,497 +1,590 @@
 [
   {
-    "pic": "907143904",
-    "vat_numbers": "02600460394",
-    "source_url": "http://www.safe-europe.eu"
-  },
-  {
-    "pic": "999988521",
-    "vat_numbers": "",
-    "source_url": "http://www.enea.it"
-  },
-  {
-    "pic": "991972053",
-    "vat_numbers": "01256760669",
-    "source_url": "http://www.consorziocreo.it"
-  },
-  {
-    "pic": "999979500",
-    "vat_numbers": "02118311006",
-    "source_url": "http://www.cnr.it"
-  },
-  {
-    "pic": "999694708",
-    "vat_numbers": "02126711007",
-    "source_url": "https://www.iai.it"
-  },
-  {
-    "pic": "998627417",
-    "vat_numbers": "00881841001",
-    "source_url": "http://www.leonardo.com"
-  },
-  {
-    "pic": "999488195",
-    "vat_numbers": "",
-    "source_url": "www.thalesaleniaspace.com"
-  },
-  {
-    "pic": "999939051",
-    "vat_numbers": "04812701003",
-    "source_url": "http://www.telespazio.com"
-  },
-  {
-    "pic": "990040007",
-    "vat_numbers": "",
-    "source_url": "http://www.mbda-systems.com/"
-  },
-  {
-    "pic": "951630432",
-    "vat_numbers": "",
-    "source_url": "www.inbio.it"
-  },
-  {
-    "pic": "998453011",
-    "vat_numbers": "",
-    "source_url": "www.c-s-m.it"
-  },
-  {
-    "pic": "938969701",
-    "vat_numbers": "02616760597",
-    "source_url": "http://www.sensichips.com"
-  },
-  {
-    "pic": "893663911",
-    "vat_numbers": "",
-    "source_url": "https://www.flysight.it/"
-  },
-  {
-    "pic": "892662580",
-    "vat_numbers": "",
-    "source_url": "www.simmeldifesa.com"
-  },
-  {
-    "pic": "999611288",
-    "vat_numbers": "01808150971",
-    "source_url": "http://www.smartex.it"
-  },
-  {
-    "pic": "953490213",
-    "vat_numbers": "",
-    "source_url": "https://www.ergonresearch.it/"
-  },
-  {
-    "pic": "911716484",
-    "vat_numbers": "",
-    "source_url": "http://www.elettronicagroup.com/"
-  },
-  {
-    "pic": "985510204",
-    "vat_numbers": "05833770729",
-    "source_url": "http://www.sitael.com"
-  },
-  {
-    "pic": "991678046",
-    "vat_numbers": "",
-    "source_url": "www.e-geos.it"
-  },
-  {
-    "pic": "899680821",
-    "vat_numbers": "",
-    "source_url": "http://www.nurjanatech.com/"
-  },
-  {
-    "pic": "910551514",
-    "vat_numbers": "11686290013",
-    "source_url": "http://www.aikospace.com"
-  },
-  {
-    "pic": "934617214",
-    "vat_numbers": "13010511007",
-    "source_url": "http://www.onaircs.com"
-  },
-  {
-    "pic": "923782605",
-    "vat_numbers": "04047011004",
-    "source_url": "http://www.imtsrl.it"
-  },
-  {
-    "pic": "888835542",
-    "vat_numbers": "",
-    "source_url": "www.st4in.com"
-  },
-  {
-    "pic": "993050014",
-    "vat_numbers": "01138480031",
-    "source_url": "http://www.optec.eu"
-  },
-  {
-    "pic": "948420120",
-    "vat_numbers": "",
-    "source_url": "www.elital.com"
-  },
-  {
-    "pic": "998325941",
-    "vat_numbers": "06458931000",
-    "source_url": "http://www.dblue.it"
-  },
-  {
-    "pic": "916965542",
-    "vat_numbers": "02417330996",
-    "source_url": "http://www.stamtech.com"
-  },
-  {
-    "pic": "999840887",
-    "vat_numbers": "00427620364",
-    "source_url": "http://www.unimore.it"
-  },
-  {
-    "pic": "999625450",
-    "vat_numbers": "",
-    "source_url": "www.fbk.eu"
-  },
-  {
-    "pic": "911383483",
-    "vat_numbers": "",
-    "source_url": "www.fincantieri.com/it/gruppo/controllate-collegate/fincantieri-nextech/"
-  },
-  {
-    "pic": "935534931",
-    "vat_numbers": "09042941006",
-    "source_url": "http://www.sentech.it"
-  },
-  {
-    "pic": "888612636",
-    "vat_numbers": "",
-    "source_url": "www.gelcospa.it"
-  },
-  {
-    "pic": "952900162",
-    "vat_numbers": "07373150965",
-    "source_url": "http://www.deorbitaldevices.com"
-  },
-  {
-    "pic": "938861643",
-    "vat_numbers": "04802040289",
-    "source_url": "http://www.t4innovation.com"
-  },
-  {
-    "pic": "999649603",
-    "vat_numbers": "01938560347",
-    "source_url": "https://www.cnit.it/"
-  },
-  {
-    "pic": "918259522",
-    "vat_numbers": "01956841009",
-    "source_url": "http://www.depelsys.it"
-  },
-  {
-    "pic": "934691128",
-    "vat_numbers": "",
-    "source_url": "www.civitanavi.com"
-  },
-  {
-    "pic": "952724689",
-    "vat_numbers": "07715370966",
-    "source_url": "http://www.g-red.eu"
-  },
-  {
-    "pic": "892662580",
-    "vat_numbers": "",
-    "source_url": "https://www.knds.fr/en/our-brand/knds-ammo-italy-spa"
-  },
-  {
-    "pic": "999951467",
-    "vat_numbers": "03794120109",
-    "source_url": "http://www.rina.org"
-  },
-  {
-    "pic": "999976590",
-    "vat_numbers": "",
-    "source_url": "www.unina.it"
-  },
-  {
-    "pic": "950043221",
-    "vat_numbers": "10898340012",
-    "source_url": "http://www.avioaero.com"
-  },
-  {
-    "pic": "999977754",
-    "vat_numbers": "00518460019",
-    "source_url": "http://www.polito.it"
-  },
-  {
-    "pic": "972374173",
-    "vat_numbers": "",
-    "source_url": "www.loccioni.com"
-  },
-  {
-    "pic": "999895789",
-    "vat_numbers": "01279680480",
-    "source_url": "http://www.unifi.it"
-  },
-  {
-    "pic": "999879881",
-    "vat_numbers": "04376620151",
-    "source_url": "http://www.polimi.it"
-  },
-  {
-    "pic": "888559189",
-    "vat_numbers": "02300170012",
-    "source_url": "http://www.atla.it"
-  },
-  {
-    "pic": "999789768",
-    "vat_numbers": "01908170614",
-    "source_url": "https://www.cira.it"
-  },
-  {
-    "pic": "897583196",
-    "vat_numbers": "02932590645",
-    "source_url": "http://www.mypartmeccanica.com"
-  },
-  {
-    "pic": "930253669",
-    "vat_numbers": "",
-    "source_url": "www.dreaminnovation.it"
-  },
-  {
-    "pic": "893539169",
-    "vat_numbers": "",
-    "source_url": "www.argotecgroup.com"
-  },
-  {
-    "pic": "999995602",
-    "vat_numbers": "",
-    "source_url": "www.unipd.it"
-  },
-  {
-    "pic": "999899184",
-    "vat_numbers": "00851300657",
-    "source_url": "http://www.unisa.it"
-  },
-  {
-    "pic": "999431159",
-    "vat_numbers": "",
-    "source_url": "www.poliba.it"
-  },
-  {
-    "pic": "897212753",
-    "vat_numbers": "",
-    "source_url": "www.morfodesign.it"
+    "pic": "880134836",
+    "vat_numbers": "IT08890680013",
+    "source_url": "http://www.italwatt.it",
+    "effective_url": "https://www.italwatt.it/"
   },
   {
     "pic": "884000383",
     "vat_numbers": "09768170152",
-    "source_url": "http://www.txtgroup.com"
-  },
-  {
-    "pic": "991209924",
-    "vat_numbers": "",
-    "source_url": "www.loccioni.com"
-  },
-  {
-    "pic": "912346693",
-    "vat_numbers": "",
-    "source_url": "www.graphene-xt.com"
-  },
-  {
-    "pic": "911606680",
-    "vat_numbers": "",
-    "source_url": "http://www.larimart.it/"
-  },
-  {
-    "pic": "999595380",
-    "vat_numbers": "01612800167",
-    "source_url": "http://www.unibg.it"
-  },
-  {
-    "pic": "937213225",
-    "vat_numbers": "",
-    "source_url": "www.consorzioipazia.it"
-  },
-  {
-    "pic": "894130481",
-    "vat_numbers": "05236190285",
-    "source_url": "http://www.nablawave.com"
-  },
-  {
-    "pic": "999472675",
-    "vat_numbers": "06838821004",
-    "source_url": "http://www.ingv.it"
-  },
-  {
-    "pic": "999976687",
-    "vat_numbers": "00754150100",
-    "source_url": "http://www.unige.it"
-  },
-  {
-    "pic": "951095962",
-    "vat_numbers": "11933781004",
-    "source_url": "http://www.unilink.it"
-  },
-  {
-    "pic": "930157833",
-    "vat_numbers": "",
-    "source_url": "www.baschieri-pellagri.com"
-  },
-  {
-    "pic": "997336638",
-    "vat_numbers": "",
-    "source_url": "www.cetena.it"
-  },
-  {
-    "pic": "884746022",
-    "vat_numbers": "03945221202",
-    "source_url": "https://itres-system.com"
-  },
-  {
-    "pic": "999987745",
-    "vat_numbers": "",
-    "source_url": "www.uniroma1.it"
-  },
-  {
-    "pic": "999978821",
-    "vat_numbers": "",
-    "source_url": "http://www.iss.it"
-  },
-  {
-    "pic": "999844864",
-    "vat_numbers": "",
-    "source_url": "www.web.uniroma2.it"
-  },
-  {
-    "pic": "999893752",
-    "vat_numbers": "",
-    "source_url": "www.unipv.it"
-  },
-  {
-    "pic": "999552700",
-    "vat_numbers": "02414840211",
-    "source_url": "http://www.micro-photon-devices.com"
-  },
-  {
-    "pic": "935106094",
-    "vat_numbers": "03546780242",
-    "source_url": "http://www.officinastellare.com"
-  },
-  {
-    "pic": "984212344",
-    "vat_numbers": "02449361210",
-    "source_url": "http://www.mec-mmic.com"
-  },
-  {
-    "pic": "995925967",
-    "vat_numbers": "",
-    "source_url": "www.thalesgroup.com"
-  },
-  {
-    "pic": "968741911",
-    "vat_numbers": "02005300351",
-    "source_url": "https://www.e4company.com/en/"
-  },
-  {
-    "pic": "888417472",
-    "vat_numbers": "03888200965",
-    "source_url": "http://www.sighup.io"
-  },
-  {
-    "pic": "988419913",
-    "vat_numbers": "",
-    "source_url": "www.airbus.com"
-  },
-  {
-    "pic": "905070917",
-    "vat_numbers": "",
-    "source_url": "cy4gate.com"
-  },
-  {
-    "pic": "951577179",
-    "vat_numbers": "10757660013",
-    "source_url": "http://www.lcengineering.eu"
-  },
-  {
-    "pic": "888492259",
-    "vat_numbers": "",
-    "source_url": "citteriodefender.it"
-  },
-  {
-    "pic": "906261107",
-    "vat_numbers": "",
-    "source_url": "www.next2u-solutions.com"
-  },
-  {
-    "pic": "941331651",
-    "vat_numbers": "05009770966",
-    "source_url": "http://www.bv-tech.it"
-  },
-  {
-    "pic": "997457985",
-    "vat_numbers": "00360680441",
-    "source_url": "http://www.gemrad.com"
-  },
-  {
-    "pic": "999771629",
-    "vat_numbers": "",
-    "source_url": "www.fincantieri.com"
-  },
-  {
-    "pic": "889303276",
-    "vat_numbers": "",
-    "source_url": "https://www.rheinmetall-defence.com/en/rheinmetall_defence/company/divisions_and_subsidiaries/rheinmetall_italia/index.php"
-  },
-  {
-    "pic": "999440665",
-    "vat_numbers": "",
-    "source_url": "www.unicampus.it"
-  },
-  {
-    "pic": "898895121",
-    "vat_numbers": "",
-    "source_url": "www.ivecodefencevehicles.com"
+    "source_url": "http://www.txtgroup.com",
+    "effective_url": "https://www.txtgroup.com/"
   },
   {
     "pic": "884548142",
     "vat_numbers": "",
-    "source_url": "www.beretta.com"
+    "source_url": "www.beretta.com",
+    "effective_url": "https://www.beretta.com/"
+  },
+  {
+    "pic": "884746022",
+    "vat_numbers": "03945221202",
+    "source_url": "https://itres-system.com",
+    "effective_url": "https://itres-system.com/"
+  },
+  {
+    "pic": "888417472",
+    "vat_numbers": "03888200965",
+    "source_url": "http://www.sighup.io",
+    "effective_url": "https://www.reevo.it/it/cloudnative-devops"
+  },
+  {
+    "pic": "888492259",
+    "vat_numbers": "",
+    "source_url": "citteriodefender.it",
+    "effective_url": "https://www.citteriodefender.it/"
+  },
+  {
+    "pic": "888559189",
+    "vat_numbers": "02300170012",
+    "source_url": "http://www.atla.it",
+    "effective_url": "https://www.atla.it/"
+  },
+  {
+    "pic": "888612636",
+    "vat_numbers": "",
+    "source_url": "www.gelcospa.it",
+    "effective_url": "http://www.gelcospa.it/"
+  },
+  {
+    "pic": "888835542",
+    "vat_numbers": "",
+    "source_url": "www.st4in.com",
+    "effective_url": "https://st4in.com/"
+  },
+  {
+    "pic": "889303276",
+    "vat_numbers": "",
+    "source_url": "https://www.rheinmetall-defence.com/en/rheinmetall_defence/company/divisions_and_subsidiaries/rheinmetall_italia/index.php",
+    "effective_url": "https://www.rheinmetall.com/en/company/subsidiaries/rheinmetall-italia"
+  },
+  {
+    "pic": "892662580",
+    "vat_numbers": "",
+    "source_url": "https://www.knds.fr/en/our-brand/knds-ammo-italy-spa",
+    "effective_url": "https://www.knds.fr/en/our-brand/knds-ammo-italy-spa"
+  },
+  {
+    "pic": "893539169",
+    "vat_numbers": "",
+    "source_url": "www.argotecgroup.com",
+    "effective_url": "NA"
+  },
+  {
+    "pic": "893663911",
+    "vat_numbers": "01939260491",
+    "source_url": "https://www.flysight.it/",
+    "effective_url": "https://www.flysight.it/"
+  },
+  {
+    "pic": "894130481",
+    "vat_numbers": "05236190285",
+    "source_url": "http://www.nablawave.com",
+    "effective_url": "https://www.nablawave.com/"
+  },
+  {
+    "pic": "897212753",
+    "vat_numbers": "06861960489",
+    "source_url": "http://www.morfodesign.it",
+    "effective_url": "https://www.morfodesign.it/"
+  },
+  {
+    "pic": "897583196",
+    "vat_numbers": "02932590645",
+    "source_url": "http://www.mypartmeccanica.com",
+    "effective_url": "https://www.mypartmeccanica.com/"
+  },
+  {
+    "pic": "898895121",
+    "vat_numbers": "",
+    "source_url": "www.ivecodefencevehicles.com",
+    "effective_url": "https://www.idvgroup.com/"
+  },
+  {
+    "pic": "899680821",
+    "vat_numbers": "",
+    "source_url": "http://www.nurjanatech.com/",
+    "effective_url": "https://www.nurjanatech.com/"
+  },
+  {
+    "pic": "905070917",
+    "vat_numbers": "13129151000",
+    "source_url": "http://cy4gate.com",
+    "effective_url": "https://www.cy4gate.com/"
+  },
+  {
+    "pic": "906261107",
+    "vat_numbers": "02105360685",
+    "source_url": "http://www.next2u-solutions.com",
+    "effective_url": "https://www.next2u-solutions.com/"
+  },
+  {
+    "pic": "907143904",
+    "vat_numbers": "02600460394",
+    "source_url": "http://www.safe-europe.eu",
+    "effective_url": "https://www.safe-europe.eu/"
+  },
+  {
+    "pic": "910551514",
+    "vat_numbers": "11686290013",
+    "source_url": "http://www.aikospace.com",
+    "effective_url": "https://aikospace.com/"
+  },
+  {
+    "pic": "911383483",
+    "vat_numbers": "",
+    "source_url": "www.fincantieri.com/it/gruppo/controllate-collegate/fincantieri-nextech/",
+    "effective_url": "http://www.fincantieri.com/it/gruppo/controllate-collegate/fincantieri-nextech/"
+  },
+  {
+    "pic": "911606680",
+    "vat_numbers": "00881071005",
+    "source_url": "http://www.larimart.it/",
+    "effective_url": "https://larimart.it/"
+  },
+  {
+    "pic": "911716484",
+    "vat_numbers": "00886951003",
+    "source_url": "http://www.elettronicagroup.com/",
+    "effective_url": "https://www.eltgroup.net/"
+  },
+  {
+    "pic": "912346693",
+    "vat_numbers": "03583971209",
+    "source_url": "http://www.graphene-xt.com",
+    "effective_url": "https://www.graphene-xt.com/"
+  },
+  {
+    "pic": "916965542",
+    "vat_numbers": "02417330996",
+    "source_url": "http://www.stamtech.com",
+    "effective_url": "https://www.stamtech.com/"
+  },
+  {
+    "pic": "918259522",
+    "vat_numbers": "IT01956841009",
+    "source_url": "http://www.depelsys.it",
+    "effective_url": "https://depelsys.it/"
+  },
+  {
+    "pic": "923782605",
+    "vat_numbers": "IT04047011004",
+    "source_url": "http://www.imtsrl.it",
+    "effective_url": "https://www.imtsrl.it/"
+  },
+  {
+    "pic": "930157833",
+    "vat_numbers": "00810220137",
+    "source_url": "http://www.baschieri-pellagri.com",
+    "effective_url": "https://www.baschieri-pellagri.com/"
+  },
+  {
+    "pic": "930253669",
+    "vat_numbers": "",
+    "source_url": "www.dreaminnovation.it",
+    "effective_url": "http://www.dreaminnovation.it/"
+  },
+  {
+    "pic": "934617214",
+    "vat_numbers": "13010511007",
+    "source_url": "http://www.onaircs.com",
+    "effective_url": "http://www.onaircs.com/"
+  },
+  {
+    "pic": "934691128",
+    "vat_numbers": "",
+    "source_url": "www.civitanavi.com",
+    "effective_url": "https://www.civitanavi.com/"
+  },
+  {
+    "pic": "935106094",
+    "vat_numbers": "IT03546780242",
+    "source_url": "http://www.officinastellare.com",
+    "effective_url": "https://www.officinastellare.com/"
+  },
+  {
+    "pic": "935534931",
+    "vat_numbers": "09042941006",
+    "source_url": "http://www.sentech.it",
+    "effective_url": "http://www.sentech.it/"
+  },
+  {
+    "pic": "937213225",
+    "vat_numbers": "11361961003",
+    "source_url": "http://www.consorzioipazia.it",
+    "effective_url": "https://www.consorzioipazia.it/"
+  },
+  {
+    "pic": "938861643",
+    "vat_numbers": "IT04802040289",
+    "source_url": "http://www.t4innovation.com",
+    "effective_url": "https://www.t4innovation.com/"
+  },
+  {
+    "pic": "938969701",
+    "vat_numbers": "02616760597",
+    "source_url": "http://www.sensichips.com",
+    "effective_url": "https://sensichips.com/"
+  },
+  {
+    "pic": "941331651",
+    "vat_numbers": "05009770966",
+    "source_url": "http://www.bv-tech.it",
+    "effective_url": "https://www.bvtech.com/"
+  },
+  {
+    "pic": "948420120",
+    "vat_numbers": "",
+    "source_url": "www.elital.com",
+    "effective_url": "https://elital.com/"
+  },
+  {
+    "pic": "950043221",
+    "vat_numbers": "10898340012",
+    "source_url": "http://www.avioaero.com",
+    "effective_url": "https://avioaero.com/"
+  },
+  {
+    "pic": "951095962",
+    "vat_numbers": "11933781004",
+    "source_url": "http://www.unilink.it",
+    "effective_url": "https://www.unilink.it/"
+  },
+  {
+    "pic": "951577179",
+    "vat_numbers": "10757660013",
+    "source_url": "http://www.lcengineering.eu",
+    "effective_url": "https://www.lcengineering.eu/"
+  },
+  {
+    "pic": "951630432",
+    "vat_numbers": "",
+    "source_url": "www.inbio.it",
+    "effective_url": "http://www.inbio.it/"
+  },
+  {
+    "pic": "952724689",
+    "vat_numbers": "07715370966",
+    "source_url": "http://www.g-red.eu",
+    "effective_url": "https://www.g-red.eu/"
+  },
+  {
+    "pic": "952900162",
+    "vat_numbers": "07373150965",
+    "source_url": "http://www.deorbitaldevices.com",
+    "effective_url": "https://www.dorbit.space/"
+  },
+  {
+    "pic": "953490213",
+    "vat_numbers": "05877940485",
+    "source_url": "https://www.ergonresearch.it/",
+    "effective_url": "https://www.ergonresearch.it/"
+  },
+  {
+    "pic": "968741911",
+    "vat_numbers": "02005300351",
+    "source_url": "https://www.e4company.com/en/",
+    "effective_url": "https://www.e4company.com/en/"
+  },
+  {
+    "pic": "972374173",
+    "vat_numbers": "",
+    "source_url": "www.loccioni.com",
+    "effective_url": "https://www.loccioni.com/it/"
+  },
+  {
+    "pic": "984212344",
+    "vat_numbers": "IT024493612109",
+    "source_url": "http://www.mec-mmic.com",
+    "effective_url": "https://www.mec-mmic.it/"
+  },
+  {
+    "pic": "985510204",
+    "vat_numbers": "IT05833770729",
+    "source_url": "http://www.sitael.com",
+    "effective_url": "https://www.sitael.com/"
+  },
+  {
+    "pic": "988419913",
+    "vat_numbers": "",
+    "source_url": "www.airbus.com",
+    "effective_url": "https://www.airbus.com/en"
+  },
+  {
+    "pic": "990040007",
+    "vat_numbers": "",
+    "source_url": "http://www.mbda-systems.com/",
+    "effective_url": "https://www.mbda-systems.com/country-it?rc=1"
+  },
+  {
+    "pic": "991209924",
+    "vat_numbers": "",
+    "source_url": "www.loccioni.com",
+    "effective_url": "https://www.loccioni.com/it/"
+  },
+  {
+    "pic": "991678046",
+    "vat_numbers": "",
+    "source_url": "www.e-geos.it",
+    "effective_url": "https://www.e-geos.it/"
+  },
+  {
+    "pic": "991972053",
+    "vat_numbers": "01256760669",
+    "source_url": "http://www.consorziocreo.it",
+    "effective_url": "http://www.consorziocreo.it/"
+  },
+  {
+    "pic": "993050014",
+    "vat_numbers": "IT01138480031",
+    "source_url": "http://www.optec.eu",
+    "effective_url": "https://www.optec.eu/"
+  },
+  {
+    "pic": "995925967",
+    "vat_numbers": "",
+    "source_url": "www.thalesgroup.com",
+    "effective_url": "https://www.thalesgroup.com/en"
+  },
+  {
+    "pic": "997336638",
+    "vat_numbers": "",
+    "source_url": "www.cetena.it",
+    "effective_url": "http://www.cetena.it/"
+  },
+  {
+    "pic": "997457985",
+    "vat_numbers": "IT 00360680441",
+    "source_url": "http://www.gemrad.com",
+    "effective_url": "https://www.gemrad.com/"
+  },
+  {
+    "pic": "998325941",
+    "vat_numbers": "06458931000",
+    "source_url": "http://www.dblue.it",
+    "effective_url": "https://dblue.it/"
+  },
+  {
+    "pic": "998453011",
+    "vat_numbers": "",
+    "source_url": "www.c-s-m.it",
+    "effective_url": "NA"
+  },
+  {
+    "pic": "998627417",
+    "vat_numbers": "00881841001",
+    "source_url": "http://www.leonardo.com",
+    "effective_url": "https://www.leonardo.com/en/"
   },
   {
     "pic": "998627805",
     "vat_numbers": "09261710017",
-    "source_url": "http://www.inrim.it"
-  },
-  {
-    "pic": "999840596",
-    "vat_numbers": "",
-    "source_url": "www.uniba.it"
+    "source_url": "http://www.inrim.it",
+    "effective_url": "https://www.inrim.it/it"
   },
   {
     "pic": "998738385",
     "vat_numbers": "",
-    "source_url": "www.qascom.com"
+    "source_url": "www.qascom.com",
+    "effective_url": "https://www.qascom.com/"
   },
   {
-    "pic": "999898020",
-    "vat_numbers": "00273530527",
-    "source_url": "http://www.unisi.it"
+    "pic": "999431159",
+    "vat_numbers": "04301530723",
+    "source_url": "http://www.poliba.it",
+    "effective_url": "http://www.poliba.it/"
+  },
+  {
+    "pic": "999440665",
+    "vat_numbers": "048 020 51 005",
+    "source_url": "http://www.unicampus.it",
+    "effective_url": "https://www.unicampus.it/"
+  },
+  {
+    "pic": "999472675",
+    "vat_numbers": "06838821004",
+    "source_url": "http://www.ingv.it",
+    "effective_url": "https://www.ingv.it/"
+  },
+  {
+    "pic": "999488195",
+    "vat_numbers": "",
+    "source_url": "www.thalesaleniaspace.com",
+    "effective_url": "https://www.thalesaleniaspace.com/en"
+  },
+  {
+    "pic": "999552700",
+    "vat_numbers": "IT02414840211",
+    "source_url": "http://www.micro-photon-devices.com",
+    "effective_url": "http://www.micro-photon-devices.com/"
+  },
+  {
+    "pic": "999595380",
+    "vat_numbers": "01612800167",
+    "source_url": "http://www.unibg.it",
+    "effective_url": "https://www.unibg.it/"
+  },
+  {
+    "pic": "999611288",
+    "vat_numbers": "01808150971",
+    "source_url": "http://www.smartex.it",
+    "effective_url": "https://www.smartex.it/"
+  },
+  {
+    "pic": "999625450",
+    "vat_numbers": "",
+    "source_url": "www.fbk.eu",
+    "effective_url": "https://www.fbk.eu/en/"
+  },
+  {
+    "pic": "999649603",
+    "vat_numbers": "01938560347",
+    "source_url": "https://www.cnit.it/",
+    "effective_url": "https://www.cnit.it/"
+  },
+  {
+    "pic": "999694708",
+    "vat_numbers": "02126711007",
+    "source_url": "https://www.iai.it",
+    "effective_url": "https://www.iai.it/it"
+  },
+  {
+    "pic": "999771629",
+    "vat_numbers": "",
+    "source_url": "www.fincantieri.com",
+    "effective_url": "http://www.fincantieri.com/"
+  },
+  {
+    "pic": "999789768",
+    "vat_numbers": "01908170614",
+    "source_url": "https://www.cira.it",
+    "effective_url": "https://www.cira.it/it"
+  },
+  {
+    "pic": "999840596",
+    "vat_numbers": "01086760723",
+    "source_url": "http://www.uniba.it",
+    "effective_url": "https://www.uniba.it/it"
+  },
+  {
+    "pic": "999840887",
+    "vat_numbers": "00427620364",
+    "source_url": "http://www.unimore.it",
+    "effective_url": "https://www.unimore.it/it"
   },
   {
     "pic": "999841954",
     "vat_numbers": "00340520220",
-    "source_url": "http://www.unitn.it"
+    "source_url": "http://www.unitn.it",
+    "effective_url": "https://www.unitn.it/it"
   },
   {
-    "pic": "999993953",
+    "pic": "999844864",
+    "vat_numbers": "02133971008",
+    "source_url": "http://www.web.uniroma2.it",
+    "effective_url": "http://web.uniroma2.it/"
+  },
+  {
+    "pic": "999879881",
+    "vat_numbers": "04376620151",
+    "source_url": "http://www.polimi.it",
+    "effective_url": "https://www.polimi.it/"
+  },
+  {
+    "pic": "999893752",
     "vat_numbers": "",
-    "source_url": "www.unibo.it"
+    "source_url": "www.unipv.it",
+    "effective_url": "https://portale.unipv.it/it"
+  },
+  {
+    "pic": "999895789",
+    "vat_numbers": "01279680480",
+    "source_url": "http://www.unifi.it",
+    "effective_url": "https://www.unifi.it/it"
+  },
+  {
+    "pic": "999898020",
+    "vat_numbers": "00273530527",
+    "source_url": "http://www.unisi.it",
+    "effective_url": "https://www.unisi.it/"
+  },
+  {
+    "pic": "999899184",
+    "vat_numbers": "00851300657",
+    "source_url": "http://www.unisa.it",
+    "effective_url": "https://www.unisa.it/"
+  },
+  {
+    "pic": "999939051",
+    "vat_numbers": "04812701003",
+    "source_url": "http://www.telespazio.com",
+    "effective_url": "https://www.telespazio.com/en/home"
+  },
+  {
+    "pic": "999951467",
+    "vat_numbers": "03794120109",
+    "source_url": "http://www.rina.org",
+    "effective_url": "https://www.rina.org/en"
+  },
+  {
+    "pic": "999976590",
+    "vat_numbers": "",
+    "source_url": "www.unina.it",
+    "effective_url": "http://www.unina.it/home;jsessionid=9718BE4BE929087B76DC2FB38CD0D5EB.node_publisher12"
+  },
+  {
+    "pic": "999976687",
+    "vat_numbers": "00754150100",
+    "source_url": "http://www.unige.it",
+    "effective_url": "https://unige.it//"
   },
   {
     "pic": "999977657",
     "vat_numbers": "",
-    "source_url": "www.st.com"
+    "source_url": "www.st.com",
+    "effective_url": "NA"
   },
   {
-    "pic": "880134836",
-    "vat_numbers": "08890680013",
-    "source_url": "http://www.italwatt.it"
+    "pic": "999977754",
+    "vat_numbers": "00518460019",
+    "source_url": "http://www.polito.it",
+    "effective_url": "https://www.polito.it/"
+  },
+  {
+    "pic": "999978821",
+    "vat_numbers": "03657731000",
+    "source_url": "http://www.iss.it",
+    "effective_url": "https://www.iss.it/"
+  },
+  {
+    "pic": "999979500",
+    "vat_numbers": "02118311006",
+    "source_url": "http://www.cnr.it",
+    "effective_url": "https://www.cnr.it//"
+  },
+  {
+    "pic": "999987745",
+    "vat_numbers": "02133771002",
+    "source_url": "http://www.uniroma1.it",
+    "effective_url": "https://www.uniroma1.it/it/"
+  },
+  {
+    "pic": "999988521",
+    "vat_numbers": "00985801000",
+    "source_url": "http://www.enea.it",
+    "effective_url": "https://www.enea.it/it/"
+  },
+  {
+    "pic": "999993953",
+    "vat_numbers": "01131710376",
+    "source_url": "http://www.unibo.it",
+    "effective_url": "https://www.unibo.it/it"
+  },
+  {
+    "pic": "999995602",
+    "vat_numbers": "00742430283",
+    "source_url": "http://www.unipd.it",
+    "effective_url": "https://www.unipd.it/"
   }
 ]
