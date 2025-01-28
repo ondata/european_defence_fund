@@ -1,5 +1,15 @@
 # Log di progetto
 
+## 2025-01-28
+- Creato script `p_iva_scrape.sh` per estrarre le Partite IVA dai siti web delle aziende italiane
+- Implementato:
+  - Estrazione lista partecipanti italiani dal dataset
+  - Gestione URL e redirects
+  - Estrazione Partite IVA tramite LLM
+  - Salvataggio risultati in JSON con tracking degli URL
+  - Sistema di ripresa in caso di interruzione
+  - Gestione rate limiting per API LLM
+
 ## 2025-01-26
 - Creato script `progetti_finanziati.sh` per scaricare i dati dei progetti EDF finanziati
 - Implementato:
