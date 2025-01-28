@@ -53,8 +53,9 @@ while IFS= read -r line; do
         if page_content=$(curl -kL --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
             # Use LLM to extract VAT number
             if llm_result=$(echo "$page_content" | strip-tags | llm -s "sei un estrattore di partita iva, ma non di codice fiscale. se leggi ad esempio Partita IVA 00985801000 e Codice Fiscale 01320740580, estrai soltanto l'iva, e usa il campo partita_iva, se vuoto stampamelo vuoto" -o json_object true); then
-                vat_numbers=$(echo "$llm_result" | jq -r '.partita_iva')
-                if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
+                # Parse JSON output, handling potential errors
+                if vat_numbers=$(echo "$llm_result" | jq -r 'if type == "object" then .partita_iva else "" end' 2>/dev/null); then
+                    if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
 
                     # Add new entry to JSON array with both original and effective URLs
                     tmp_file="${folder}/tmp/vat_numbers_tmp.json"
