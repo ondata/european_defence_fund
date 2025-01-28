@@ -56,15 +56,15 @@ while IFS= read -r line; do
                 # Parse JSON output, handling potential errors
                 if vat_numbers=$(echo "$llm_result" | jq -r 'if type == "object" then .partita_iva else "" end' 2>/dev/null); then
                     if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
-
-                    # Add new entry to JSON array with both original and effective URLs
-                    tmp_file="${folder}/tmp/vat_numbers_tmp.json"
-                    jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" --arg eff_url "$effective_url" \
-                       '. += [{"pic": $pic, "vat_numbers": $vat, "source_url": $url, "effective_url": $eff_url}]' \
-                       "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
-                    echo "Found VAT numbers for PIC $pic: $vat_numbers"
-                    success=1
-                    break
+                        # Add new entry to JSON array with both original and effective URLs
+                        tmp_file="${folder}/tmp/vat_numbers_tmp.json"
+                        jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" --arg eff_url "$effective_url" \
+                           '. += [{"pic": $pic, "vat_numbers": $vat, "source_url": $url, "effective_url": $eff_url}]' \
+                           "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
+                        echo "Found VAT numbers for PIC $pic: $vat_numbers"
+                        success=1
+                        break
+                    fi
                 fi
             fi
         fi
