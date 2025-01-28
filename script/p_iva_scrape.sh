@@ -50,7 +50,7 @@ while IFS= read -r line; do
         
         if page_content=$(curl -L --max-time 15 --silent --fail "$effective_url" 2>/dev/null); then
             # Look for VAT numbers in various formats, including those with IT prefix
-            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|Partita IVA)[[:space:]]*[^0-9]*(IT)?[0-9]{11}' | grep -oE '(IT)?[0-9]{11}' | sed 's/^IT//' | sort -u | paste -sd,); then
+            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|Partita IVA)[[:space:]]*[^A-Za-z]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
                 if [ ! -z "$vat_numbers" ]; then
                     
                     # Add new entry to JSON array with both original and effective URLs
