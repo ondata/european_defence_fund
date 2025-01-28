@@ -43,10 +43,13 @@ while IFS= read -r line; do
             # Look for VAT numbers in various formats, including those with IT prefix
             if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|Partita IVA)[^0-9]*(IT)?[0-9]{11}' | grep -oE '(IT)?[0-9]{11}' | sed 's/^IT//' | sort -u | paste -sd,); then
                 if [ ! -z "$vat_numbers" ]; then
-                    # Add new entry to JSON array
+                    # Get the effective URL after redirects
+                    effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null)
+                    
+                    # Add new entry to JSON array with both original and effective URLs
                     tmp_file="${folder}/tmp/vat_numbers_tmp.json"
-                    jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" \
-                       '. += [{"pic": $pic, "vat_numbers": $vat, "source_url": $url}]' \
+                    jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" --arg eff_url "$effective_url" \
+                       '. += [{"pic": $pic, "vat_numbers": $vat, "source_url": $url, "effective_url": $eff_url}]' \
                        "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
                     echo "Found VAT numbers for PIC $pic: $vat_numbers"
                     success=1
@@ -58,10 +61,13 @@ while IFS= read -r line; do
 
     if [ $success -eq 0 ]; then
         echo "No VAT numbers found for PIC $pic"
-        # Add entry with empty VAT numbers but include the attempted URL
+        # Get the effective URL after redirects
+        effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$url" 2>/dev/null || echo "")
+        
+        # Add entry with empty VAT numbers but include both URLs
         tmp_file="${folder}/tmp/vat_numbers_tmp.json"
-        jq --arg pic "$pic" --arg url "$url" \
-           '. += [{"pic": $pic, "vat_numbers": "", "source_url": $url}]' \
+        jq --arg pic "$pic" --arg url "$url" --arg eff_url "$effective_url" \
+           '. += [{"pic": $pic, "vat_numbers": "", "source_url": $url, "effective_url": $eff_url}]' \
            "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
     fi
 
