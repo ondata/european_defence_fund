@@ -2,3 +2,4 @@
 .env
 *Zone.Identifier
 tmp/*
+script/tmp/*
