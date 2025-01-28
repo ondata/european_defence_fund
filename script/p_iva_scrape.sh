@@ -24,7 +24,7 @@ jq 'unique_by(.pic)' "$vat_file" > "${folder}"/tmp/vat_numbers.json
 # Process each participant
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
-    
+
     # Check if PIC already exists with a VAT number in vat_numbers.json
     existing_entry=$(jq --arg pic "$pic" '.[] | select(.pic == $pic and .vat_numbers != "")' "${folder}"/tmp/vat_numbers.json)
     if [ ! -z "$existing_entry" ]; then
@@ -76,7 +76,7 @@ while IFS= read -r line; do
             continue
         fi
 
-        if page_content=$(curl -kL --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
+        if page_content=$(curl -skL -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" -H "Accept-Language: en-US,en;q=0.9" --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
             # Use LLM to extract VAT number
             if llm_result=$(echo "$page_content" | strip-tags | llm -s "Extract only the 'Partita IVA' from a given text, ignoring any 'Codice Fiscale' present. The 'Partita IVA' may sometimes include the 'IT' prefix, like 'IT02854220213'. If a 'Partita IVA' is found, provide it in an object under the field 'partita_iva'. If no 'Partita IVA' is found, return the field empty. The output must be a single JSON object with a single field: {'partita_iva': '[value]'} if found, or {'partita_iva': ''} if not found." -o json_object true); then
                 # Parse JSON output, handling potential errors
