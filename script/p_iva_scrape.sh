@@ -1,5 +1,16 @@
 #!/bin/bash
 
+# Requisiti:
+# - curl: per il download delle pagine web
+# - jq: per la manipolazione di file JSON
+# - mlr (Miller): per la manipolazione di file CSV
+# - strip-tags: per rimuovere i tag HTML dal contenuto delle pagine
+# - llm: per l'estrazione delle Partite IVA tramite LLM
+#
+# Installazione dei requisiti:
+# sudo apt install curl jq miller
+# pip install strip-tags llm
+
 #set -x
 set -e
 set -u
