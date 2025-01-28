@@ -19,10 +19,10 @@ echo "[]" > "${folder}"/tmp/vat_numbers.json
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
     url=$(echo "$line" | jq -r '.webLink')
-    
+
     # Clean and normalize URL
     url=$(echo "$url" | tr -d '[:space:]')
-    
+
     # Try different URL variants
     urls=()
     if [[ "$url" =~ ^https?:// ]]; then
@@ -34,11 +34,11 @@ while IFS= read -r line; do
             urls+=("http://www.$url" "https://www.$url" "http://$url" "https://$url")
         fi
     fi
-    
+
     success=0
     for try_url in "${urls[@]}"; do
         echo "Trying $try_url..."
-        
+
         if page_content=$(curl -L --max-time 15 --silent --fail "$try_url" 2>/dev/null); then
             # Look for VAT numbers in various formats
             if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|P.IVA|Partita IVA)[^0-9]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
@@ -55,12 +55,14 @@ while IFS= read -r line; do
             fi
         fi
     done
-    
+
     if [ $success -eq 0 ]; then
         echo "No VAT numbers found for PIC $pic"
     fi
-    
+
     # Add small delay to be nice to servers
     sleep 2
-    
+
 done < "${folder}"/tmp/italian_participants.jsonl
+
+cp "${folder}"/tmp/vat_numbers.json "${folder}"/../data/progetti_finanziati/output/vat_numbers.json
