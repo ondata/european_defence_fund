@@ -41,17 +41,18 @@ while IFS= read -r line; do
         echo "Trying $try_url..."
 
         # Get the effective URL after redirects first with 15 second timeout
-        if effective_url=$(curl -kL --max-time 15 -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null); then
-            echo "Effective URL: $effective_url"
+        if effective_url=$(curl -kL --max-time 15 -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null | head -n1); then
+            # Clean up the effective URL and check if it's valid
+            effective_url=$(echo "$effective_url" | tr -d '\n' | grep -E '^https?://' || echo "")
+            if [ ! -z "$effective_url" ]; then
+                echo "Effective URL: $effective_url"
+            else
+                echo "Invalid effective URL format from $try_url"
+                continue
+            fi
         else
             echo "Failed to connect to $try_url"
             effective_url=""
-            continue
-        fi
-        
-        # Skip if we got an empty effective URL
-        if [ -z "$effective_url" ]; then
-            echo "Empty effective URL, trying next URL variant..."
             continue
         fi
 
