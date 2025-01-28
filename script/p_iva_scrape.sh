@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 set -e
 set -u
 set -o pipefail
@@ -18,7 +18,7 @@ echo "[]" > "${folder}"/tmp/vat_numbers.json
 # Process each participant
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
-    
+
     url=$(echo "$line" | jq -r '.webLink')
 
     # Clean and normalize URL
@@ -43,19 +43,19 @@ while IFS= read -r line; do
         # Get the effective URL after redirects first with 15 second timeout
         effective_url=$(curl -kL --max-time 15 -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null || echo "$try_url")
         echo "Effective URL: $effective_url"
-        
+
         # Skip this URL if we couldn't get an effective URL within timeout
         if [ "$effective_url" = "$try_url" ]; then
             echo "Timeout getting effective URL, trying next URL variant..."
             continue
         fi
-        
+
         if page_content=$(curl -kL --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
             # Use LLM to extract VAT number
             if llm_result=$(echo "$page_content" | strip-tags | llm -s "sei un estrattore di partita iva, ma non di codice fiscale. se leggi ad esempio Partita IVA 00985801000 e Codice Fiscale 01320740580, estrai soltanto l'iva, e usa il campo partita_iva, se vuoto stampamelo vuoto" -o json_object true); then
                 vat_numbers=$(echo "$llm_result" | jq -r '.partita_iva')
                 if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
-                    
+
                     # Add new entry to JSON array with both original and effective URLs
                     tmp_file="${folder}/tmp/vat_numbers_tmp.json"
                     jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" --arg eff_url "$effective_url" \
@@ -74,7 +74,7 @@ while IFS= read -r line; do
         # Get the effective URL after redirects
         effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$url" 2>/dev/null || echo "$url")
         echo "Final effective URL for failed attempt: $effective_url"
-        
+
         # Add entry with empty VAT numbers but include both URLs
         tmp_file="${folder}/tmp/vat_numbers_tmp.json"
         jq --arg pic "$pic" --arg url "$url" --arg eff_url "$effective_url" \
