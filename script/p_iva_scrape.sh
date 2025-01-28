@@ -18,8 +18,8 @@ if [ ! -f "$vat_file" ]; then
     echo "[]" > "$vat_file"
 fi
 
-# Create temporary working copy
-cp "$vat_file" "${folder}"/tmp/vat_numbers.json
+# Create temporary working copy with unique entries only
+jq 'unique_by(.pic)' "$vat_file" > "${folder}"/tmp/vat_numbers.json
 
 # Process each participant
 while IFS= read -r line; do
@@ -82,11 +82,16 @@ while IFS= read -r line; do
                 # Parse JSON output, handling potential errors
                 if vat_numbers=$(echo "$llm_result" | jq -r 'if type == "object" then .partita_iva else "" end' 2>/dev/null); then
                     if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
-                        # Add new entry to JSON array with both original and effective URLs
+                        # Update or add entry
                         tmp_file="${folder}/tmp/vat_numbers_tmp.json"
-                        jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" --arg eff_url "$effective_url" \
-                           '. += [{"pic": $pic, "vat_numbers": $vat, "source_url": $url, "effective_url": $eff_url}]' \
-                           "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
+                        jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" --arg eff_url "$effective_url" '
+                            (map(select(.pic != $pic)) + [{
+                                "pic": $pic,
+                                "vat_numbers": $vat,
+                                "source_url": $url,
+                                "effective_url": $eff_url
+                            }]) | sort_by(.pic)
+                        ' "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
                         echo "Found VAT numbers for PIC $pic: $vat_numbers"
                         success=1
                         break
@@ -106,11 +111,16 @@ while IFS= read -r line; do
         fi
         echo "Final effective URL for failed attempt: $effective_url"
 
-        # Add entry with empty VAT numbers but include both URLs
+        # Update or add entry with empty VAT number
         tmp_file="${folder}/tmp/vat_numbers_tmp.json"
-        jq --arg pic "$pic" --arg url "$url" --arg eff_url "$effective_url" \
-           '. += [{"pic": $pic, "vat_numbers": "", "source_url": $url, "effective_url": $eff_url}]' \
-           "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
+        jq --arg pic "$pic" --arg url "$url" --arg eff_url "$effective_url" '
+            (map(select(.pic != $pic)) + [{
+                "pic": $pic,
+                "vat_numbers": "",
+                "source_url": $url,
+                "effective_url": $eff_url
+            }]) | sort_by(.pic)
+        ' "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
     fi
 
     # Add delay to respect LLM rate limit (13 requests/minute max)
