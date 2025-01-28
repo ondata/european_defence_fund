@@ -41,9 +41,10 @@ while IFS= read -r line; do
         echo "Trying $try_url..."
 
         # Get the effective URL after redirects first
-        effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null)
+        effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null || echo "$try_url")
+        echo "Effective URL: $effective_url"
         
-        if page_content=$(curl -kL --max-time 15 --silent --fail "$effective_url" 2>/dev/null); then
+        if page_content=$(curl -kL --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
             # Debug: save page content for ENEA
             if [[ "$effective_url" == *"enea.it"* ]]; then
                 echo "$page_content" > "${folder}/tmp/enea_debug.html"
@@ -66,9 +67,10 @@ while IFS= read -r line; do
     done
 
     if [ $success -eq 0 ]; then
-        echo "No VAT numbers found for PIC $pic"
+        echo "No VAT numbers found for PIC $pic (URL: $url)"
         # Get the effective URL after redirects
-        effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$url" 2>/dev/null || echo "")
+        effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$url" 2>/dev/null || echo "$url")
+        echo "Final effective URL for failed attempt: $effective_url"
         
         # Add entry with empty VAT numbers but include both URLs
         tmp_file="${folder}/tmp/vat_numbers_tmp.json"
