@@ -18,6 +18,13 @@ echo "[]" > "${folder}"/tmp/vat_numbers.json
 # Process each participant
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
+    
+    # Stop after PIC 999988521 for debug
+    if [ "$pic" = "999988521" ]; then
+        echo "Stopping after PIC 999988521 for debug"
+        break
+    fi
+    
     url=$(echo "$line" | jq -r '.webLink')
 
     # Clean and normalize URL
@@ -39,12 +46,13 @@ while IFS= read -r line; do
     for try_url in "${urls[@]}"; do
         echo "Trying $try_url..."
 
-        if page_content=$(curl -L --max-time 15 --silent --fail "$try_url" 2>/dev/null); then
+        # Get the effective URL after redirects first
+        effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null)
+        
+        if page_content=$(curl -L --max-time 15 --silent --fail "$effective_url" 2>/dev/null); then
             # Look for VAT numbers in various formats, including those with IT prefix
             if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|Partita IVA)[^0-9]*(IT)?[0-9]{11}' | grep -oE '(IT)?[0-9]{11}' | sed 's/^IT//' | sort -u | paste -sd,); then
                 if [ ! -z "$vat_numbers" ]; then
-                    # Get the effective URL after redirects
-                    effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null)
                     
                     # Add new entry to JSON array with both original and effective URLs
                     tmp_file="${folder}/tmp/vat_numbers_tmp.json"
