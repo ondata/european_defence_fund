@@ -58,6 +58,11 @@ while IFS= read -r line; do
 
     if [ $success -eq 0 ]; then
         echo "No VAT numbers found for PIC $pic"
+        # Add entry with empty VAT numbers
+        tmp_file="${folder}/tmp/vat_numbers_tmp.json"
+        jq --arg pic "$pic" --arg url "" \
+           '. += [{"pic": $pic, "vat_numbers": "", "source_url": $url}]' \
+           "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
     fi
 
     # Add small delay to be nice to servers
