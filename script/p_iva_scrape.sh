@@ -80,9 +80,9 @@ while IFS= read -r line; do
         echo "No VAT numbers found for PIC $pic (URL: $url)"
         # Get the effective URL after redirects with same cleaning as successful attempts
         if effective_url=$(curl -kL --max-time 15 -o /dev/null -w '%{url_effective}\n' "$url" 2>/dev/null | head -n1); then
-            effective_url=$(echo "$effective_url" | tr -d '\n' | grep -E '^https?://' || echo "")
+            effective_url=$(echo "$effective_url" | tr -d '\n' | grep -E '^https?://' || echo "$url")
         else
-            effective_url=""
+            effective_url="$url"
         fi
         echo "Final effective URL for failed attempt: $effective_url"
 
