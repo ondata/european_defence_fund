@@ -20,23 +20,44 @@ while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
     url=$(echo "$line" | jq -r '.webLink')
     
-    # Ensure URL starts with http:// or https://
-    if [[ ! "$url" =~ ^https?:// ]]; then
-        url="http://$url"
+    # Clean and normalize URL
+    url=$(echo "$url" | tr -d '[:space:]')
+    
+    # Try different URL variants
+    urls=()
+    if [[ "$url" =~ ^https?:// ]]; then
+        urls+=("$url")
+    else
+        if [[ "$url" =~ ^www\. ]]; then
+            urls+=("http://$url" "https://$url")
+        else
+            urls+=("http://www.$url" "https://www.$url" "http://$url" "https://$url")
+        fi
     fi
     
-    echo "Processing $url..."
-    
-    # Try to fetch the website content and extract VAT numbers
-    if vat_numbers=$(curl -L --max-time 10 --silent "$url" | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
-        if [ ! -z "$vat_numbers" ]; then
-            # Add new entry to JSON array
-            tmp_file="${folder}/tmp/vat_numbers_tmp.json"
-            jq --arg pic "$pic" --arg vat "$vat_numbers" \
-               '. += [{"pic": $pic, "vat_numbers": $vat}]' \
-               "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
-            echo "Found VAT numbers for PIC $pic: $vat_numbers"
+    success=0
+    for try_url in "${urls[@]}"; do
+        echo "Trying $try_url..."
+        
+        if page_content=$(curl -L --max-time 15 --silent --fail "$try_url" 2>/dev/null); then
+            # Look for VAT numbers in various formats
+            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|P.IVA|Partita IVA)[^0-9]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
+                if [ ! -z "$vat_numbers" ]; then
+                    # Add new entry to JSON array
+                    tmp_file="${folder}/tmp/vat_numbers_tmp.json"
+                    jq --arg pic "$pic" --arg vat "$vat_numbers" --arg url "$try_url" \
+                       '. += [{"pic": $pic, "vat_numbers": $vat, "source_url": $url}]' \
+                       "${folder}/tmp/vat_numbers.json" > "$tmp_file" && mv "$tmp_file" "${folder}/tmp/vat_numbers.json"
+                    echo "Found VAT numbers for PIC $pic: $vat_numbers"
+                    success=1
+                    break
+                fi
+            fi
         fi
+    done
+    
+    if [ $success -eq 0 ]; then
+        echo "No VAT numbers found for PIC $pic"
     fi
     
     # Add small delay to be nice to servers
