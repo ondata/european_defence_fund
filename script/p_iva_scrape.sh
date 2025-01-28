@@ -48,7 +48,11 @@ while IFS= read -r line; do
         # Get the effective URL after redirects first
         effective_url=$(curl -kL -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null)
         
-        if page_content=$(curl -L --max-time 15 --silent --fail "$effective_url" 2>/dev/null); then
+        if page_content=$(curl -kL --max-time 15 --silent --fail "$effective_url" 2>/dev/null); then
+            # Debug: save page content for ENEA
+            if [[ "$effective_url" == *"enea.it"* ]]; then
+                echo "$page_content" > "${folder}/tmp/enea_debug.html"
+            fi
             # Look for VAT numbers in various formats, including those with IT prefix
             if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|Partita IVA)[[:space:]]*[^A-Za-z]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
                 if [ ! -z "$vat_numbers" ]; then
