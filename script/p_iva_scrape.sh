@@ -12,12 +12,25 @@ mkdir -p "${folder}"/tmp
 # First generate the list of Italian participants
 mlr --icsv --ojsonl filter '$postalAddress_countryCode_abbreviation=="IT"' then cut -f pic,webLink then uniq -a then filter -x 'is_null($webLink)' "${folder}"/../data/progetti_finanziati/output/flattened/csv/metadata_participants.csv > "${folder}"/tmp/italian_participants.jsonl
 
-# Create output file for VAT numbers
-echo "[]" > "${folder}"/tmp/vat_numbers.json
+# Initialize or load existing VAT numbers file
+vat_file="${folder}"/../data/progetti_finanziati/output/vat_numbers.json
+if [ ! -f "$vat_file" ]; then
+    echo "[]" > "$vat_file"
+fi
+
+# Create temporary working copy
+cp "$vat_file" "${folder}"/tmp/vat_numbers.json
 
 # Process each participant
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
+    
+    # Check if PIC already exists in vat_numbers.json
+    existing_entry=$(jq --arg pic "$pic" '.[] | select(.pic == $pic)' "${folder}"/tmp/vat_numbers.json)
+    if [ ! -z "$existing_entry" ]; then
+        echo "PIC $pic already processed, skipping..."
+        continue
+    fi
 
     url=$(echo "$line" | jq -r '.webLink')
 
@@ -99,4 +112,5 @@ while IFS= read -r line; do
 
 done < "${folder}"/tmp/italian_participants.jsonl
 
-cp "${folder}"/tmp/vat_numbers.json "${folder}"/../data/progetti_finanziati/output/vat_numbers.json
+# Move final results to output location
+mv "${folder}"/tmp/vat_numbers.json "$vat_file"
