@@ -41,12 +41,17 @@ while IFS= read -r line; do
         echo "Trying $try_url..."
 
         # Get the effective URL after redirects first with 15 second timeout
-        effective_url=$(curl -kL --max-time 15 -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null || echo "$try_url")
-        echo "Effective URL: $effective_url"
-
-        # Skip this URL if we couldn't get an effective URL within timeout
-        if [ "$effective_url" = "$try_url" ]; then
-            echo "Timeout getting effective URL, trying next URL variant..."
+        if effective_url=$(curl -kL --max-time 15 -o /dev/null -w '%{url_effective}\n' "$try_url" 2>/dev/null); then
+            echo "Effective URL: $effective_url"
+        else
+            echo "Failed to connect to $try_url"
+            effective_url=""
+            continue
+        fi
+        
+        # Skip if we got an empty effective URL
+        if [ -z "$effective_url" ]; then
+            echo "Empty effective URL, trying next URL variant..."
             continue
         fi
 
