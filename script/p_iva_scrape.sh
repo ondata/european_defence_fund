@@ -41,7 +41,7 @@ while IFS= read -r line; do
 
         if page_content=$(curl -L --max-time 15 --silent --fail "$try_url" 2>/dev/null); then
             # Look for VAT numbers in various formats
-            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|P.IVA|Partita IVA)[^0-9]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
+            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT|IVA|PI|P.IVA|Partita IVA)[^0-9]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
                 if [ ! -z "$vat_numbers" ]; then
                     # Add new entry to JSON array
                     tmp_file="${folder}/tmp/vat_numbers_tmp.json"
