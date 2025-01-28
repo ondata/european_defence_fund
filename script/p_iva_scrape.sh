@@ -59,7 +59,7 @@ while IFS= read -r line; do
 
         if page_content=$(curl -kL --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
             # Use LLM to extract VAT number
-            if llm_result=$(echo "$page_content" | strip-tags | llm -s "Extract only the 'Partita IVA' from a given text, ignoring any 'Codice Fiscale' present. If a 'Partita IVA' is found, provide it in an object under the field 'partita_iva'. If no 'Partita IVA' is found, return the field empty. The output must be a single JSON object with a single field: {'partita_iva': '[value]'} if found, or {'partita_iva': ''} if not found." -o json_object true); then
+            if llm_result=$(echo "$page_content" | strip-tags | llm -s "Extract only the 'Partita IVA' from a given text, ignoring any 'Codice Fiscale' present. The 'Partita IVA' may sometimes include the 'IT' prefix, like 'IT02854220213'. If a 'Partita IVA' is found, provide it in an object under the field 'partita_iva'. If no 'Partita IVA' is found, return the field empty. The output must be a single JSON object with a single field: {'partita_iva': '[value]'} if found, or {'partita_iva': ''} if not found." -o json_object true); then
                 # Parse JSON output, handling potential errors
                 if vat_numbers=$(echo "$llm_result" | jq -r 'if type == "object" then .partita_iva else "" end' 2>/dev/null); then
                     if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
