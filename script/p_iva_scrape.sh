@@ -19,10 +19,9 @@ echo "[]" > "${folder}"/tmp/vat_numbers.json
 while IFS= read -r line; do
     pic=$(echo "$line" | jq -r '.pic')
     
-    # Stop after PIC 999988521 for debug
-    if [ "$pic" = "999988521" ]; then
-        echo "Stopping after PIC 999988521 for debug"
-        break
+    # Skip if PIC is after 999988521
+    if [ "$pic" -gt "999988521" ]; then
+        continue
     fi
     
     url=$(echo "$line" | jq -r '.webLink')
