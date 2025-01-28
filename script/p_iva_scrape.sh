@@ -51,13 +51,10 @@ while IFS= read -r line; do
         fi
         
         if page_content=$(curl -kL --max-time 30 --retry 3 --retry-delay 1 --silent "$effective_url" 2>/dev/null); then
-            # Debug: save page content for ENEA
-            if [[ "$effective_url" == *"enea.it"* ]]; then
-                echo "$page_content" > "${folder}/tmp/enea_debug.html"
-            fi
-            # Look for VAT numbers in various formats, including those with IT prefix
-            if vat_numbers=$(echo "$page_content" | grep -oE '(VAT[[:space:]]*IT|IVA|PI|P.IVA|P\.IVA/C\.F\.|P\.Iva/C\.Fis|Partita IVA)[[:space:]:]*[^A-Za-z]*[0-9]{11}' | grep -oE '[0-9]{11}' | sort -u | paste -sd,); then
-                if [ ! -z "$vat_numbers" ]; then
+            # Use LLM to extract VAT number
+            if llm_result=$(echo "$page_content" | strip-tags | llm -s "sei un estrattore di partita iva, ma non di codice fiscale. se leggi ad esempio Partita IVA 00985801000 e Codice Fiscale 01320740580, estrai soltanto l'iva, e usa il campo partita_iva, se vuoto stampamelo vuoto" -o json_object true); then
+                vat_numbers=$(echo "$llm_result" | jq -r '.partita_iva')
+                if [ ! -z "$vat_numbers" ] && [ "$vat_numbers" != "null" ]; then
                     
                     # Add new entry to JSON array with both original and effective URLs
                     tmp_file="${folder}/tmp/vat_numbers_tmp.json"
