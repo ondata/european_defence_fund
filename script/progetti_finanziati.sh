@@ -51,3 +51,5 @@ jq -s 'add'  "${folder}"/../data/progetti_finanziati/processing/progetti_finanzi
 # Appiattisci la struttura JSON per l'analisi dati
 flatterer --force "${folder}"/../data/progetti_finanziati/output/progetti_finanziati.json "${folder}"/../data/progetti_finanziati/output/flattened
 
+# ordina per reference
+mlr -I -S --csv sort -t reference "${folder}"/../data/progetti_finanziati/output/flattened/csv/main.csv
